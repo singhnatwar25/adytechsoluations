@@ -1,0 +1,2031 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description"
+    content="AdyTechSolutions, the best digital marketing agency, offers expert social media marketing, SEO, and PPC to grow your business. Book a free consultation today!" />
+  <meta name="keywords"
+    content="best digital marketing agency, social media marketing services, digital marketing for small businesses, affordable SMM agency, social media strategy, Facebook ads, Instagram ads, SMM packages for startups, top marketing agency near me" />
+  <meta name="author" content="AdyTechSolutions" />
+  <meta property="og:title" content="Best Digital Marketing Agency | AdyTechSolutions" />
+  <meta property="og:description"
+    content="Grow your business with expert digital marketing and social media strategies. Book your free consultation with AdyTechSolutions today!" />
+  <meta property="og:image" content="https://via.placeholder.com/1200x630?text=AdyTechSolutions+Digital+Marketing" />
+  <meta property="og:url" content="https://www.adytechsolutions.com/" />
+  <title>Best Digital Marketing Agency | AdyTechSolutions</title>
+  <!-- Bootstrap 5 CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous" />
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet" />
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" />
+  <!-- font  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Finger+Paint&display=swap" rel="stylesheet" />
+  <style>
+    /* Global Styles */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    .finger-paint-regular {
+      font-family: "Finger Paint", sans-serif;
+      font-weight: 400;
+      font-style: normal;
+    }
+
+    .hidden {
+      opacity: 0;
+      pointer-events: none;
+    }
+
+    body {
+      font-family: "Inter", sans-serif;
+      background-color: #e5e7eb;
+      scroll-behavior: smooth;
+      line-height: 1.7;
+      overflow-x: hidden;
+    }
+
+    /* Fade-in Animation */
+    @keyframes fadeInUp {
+      from {
+        opacity: 0;
+        transform: translateY(30px);
+      }
+
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    @keyframes fadeInLeft {
+      from {
+        opacity: 0;
+        transform: translateX(-30px);
+      }
+
+      to {
+        opacity: 1;
+        transform: translateX(0);
+      }
+    }
+
+    @keyframes fadeInRight {
+      from {
+        opacity: 0;
+        transform: translateX(30px);
+      }
+
+      to {
+        opacity: 1;
+        transform: translateX(0);
+      }
+    }
+
+    @keyframes pulse {
+      0% {
+        transform: scale(1);
+      }
+
+      50% {
+        transform: scale(1.05);
+      }
+
+      100% {
+        transform: scale(1);
+      }
+    }
+
+    @keyframes float {
+
+      0%,
+      100% {
+        transform: translateY(0px);
+      }
+
+      50% {
+        transform: translateY(-10px);
+      }
+    }
+
+    /* Animation Classes */
+    .animate-fade-in {
+      animation: fadeInUp 0.8s ease-out;
+    }
+
+    .animate-fade-left {
+      animation: fadeInLeft 0.8s ease-out;
+    }
+
+    .animate-fade-right {
+      animation: fadeInRight 0.8s ease-out;
+    }
+
+    .animate-on-scroll {
+      opacity: 0;
+      transform: translateY(30px);
+      transition: all 0.6s ease-out;
+    }
+
+    .animate-on-scroll.visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    header.navbar {
+      background: linear-gradient(135deg, #6b21a8, #9333ea, #ec4899);
+      box-shadow: 0 4px 20px rgba(107, 33, 168, 0.3);
+      padding: 1rem 0;
+      backdrop-filter: blur(10px);
+      transition: all 0.3s ease;
+    }
+
+    header.navbar.scrolled {
+      background: rgba(107, 33, 168, 0.95);
+      backdrop-filter: blur(20px);
+    }
+
+    .navbar-brand {
+      color: #ffffff !important;
+      font-weight: 700;
+      font-size: 1.5rem;
+      transition: all 0.3s ease;
+      text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+    }
+
+    .navbar-brand:hover {
+      transform: scale(1.05);
+      color: #f87171 !important;
+    }
+
+    .nav-link {
+      color: #ffffff !important;
+      font-weight: 600;
+      transition: all 0.3s ease;
+      position: relative;
+      margin: 0 10px;
+    }
+
+    .nav-link:hover {
+      color: #f87171 !important;
+      transform: translateY(-2px);
+    }
+
+    .nav-link::after {
+      content: "";
+      position: absolute;
+      bottom: -5px;
+      left: 50%;
+      width: 0;
+      height: 2px;
+      background: #f87171;
+      transition: all 0.3s ease;
+      transform: translateX(-50%);
+    }
+
+    .nav-link:hover::after {
+      width: 100%;
+    }
+
+    .hero-section {
+      background: linear-gradient(135deg,
+          #6b21a8 0%,
+          #9333ea 50%,
+          #ec4899 100%);
+      color: white;
+      padding: 150px 0;
+      position: relative;
+      overflow: hidden;
+      border-bottom: 5px solid #f87171;
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+    }
+
+    .hero-image {
+      position: relative;
+      max-width: 100%;
+      opacity: 0.9;
+      animation: float 3s ease-in-out infinite;
+      z-index: 2;
+    }
+
+    .hero-image img {
+      width: 100%;
+      height: auto;
+      border-radius: 20px;
+      box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+      transition: transform 0.3s ease;
+    }
+
+    .hero-image:hover img {
+      transform: scale(1.05);
+    }
+
+    .hero-section::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 1000"><defs><radialGradient id="a" cx="50%" cy="50%" r="50%"><stop offset="0%" stop-color="%23ffffff" stop-opacity="0.1"/><stop offset="100%" stop-color="%23ffffff" stop-opacity="0"/></radialGradient></defs><circle cx="200" cy="200" r="100" fill="url(%23a)"/><circle cx="800" cy="300" r="150" fill="url(%23a)"/><circle cx="400" cy="700" r="120" fill="url(%23a)"/></svg>');
+      animation: float 6s ease-in-out infinite;
+      background: url("/Images/hero.png") no-repeat center center/cover;
+      opacity: 0.15;
+      z-index: 0;
+    }
+
+    .hero-content {
+      position: relative;
+      z-index: 1;
+    }
+
+    .hero-section h1 {
+      font-size: 3.5rem;
+      font-weight: 700;
+      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+      animation: fadeInDown 1s ease-out;
+    }
+
+    .btn-custom {
+      background: linear-gradient(135deg, #f87171, #ec4899);
+      color: #ffffff;
+      font-weight: 600;
+      padding: 0.75rem 2rem;
+      border-radius: 50px;
+      border: none;
+      position: relative;
+      overflow: hidden;
+      transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+      text-decoration: none;
+      display: inline-block;
+    }
+
+    .btn-custom::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: -100%;
+      width: 100%;
+      height: 100%;
+      background: linear-gradient(90deg,
+          transparent,
+          rgba(255, 255, 255, 0.3),
+          transparent);
+      transition: left 0.5s;
+    }
+
+    .btn-custom:hover::before {
+      left: 100%;
+    }
+
+    .btn-custom:hover {
+      transform: translateY(-3px) scale(1.05);
+      box-shadow: 0 15px 30px rgba(248, 113, 113, 0.4);
+      background: linear-gradient(135deg, #ec4899, #f87171);
+      color: #ffffff;
+      text-decoration: none;
+    }
+
+    .btn-custom:active {
+      transform: translateY(-1px) scale(1.02);
+    }
+
+    .section-title {
+      font-size: 2.5rem;
+      font-weight: 700;
+      color: #6b21a8;
+      margin-bottom: 3rem;
+      position: relative;
+      text-align: center;
+    }
+
+    .section-title::after {
+      content: "";
+      width: 60px;
+      height: 4px;
+      background: #f87171;
+      position: absolute;
+      bottom: -10px;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+
+    .service-card,
+    .benefit-card,
+    .testimonial-card,
+    .faq-card {
+      border: none;
+      border-radius: 15px;
+      background: linear-gradient(145deg, #ffffff, #f8f9fa);
+      box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+      transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+      position: relative;
+      overflow: hidden;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .service-card .card-body {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      padding: 2rem;
+    }
+
+    .service-card .card-text {
+      flex: 1;
+      margin-bottom: 1.5rem;
+    }
+
+    .service-image {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+      border-radius: 15px 15px 0 0;
+    }
+
+    .service-card::before,
+    .benefit-card::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: -100%;
+      width: 100%;
+      height: 100%;
+      background: linear-gradient(90deg,
+          transparent,
+          rgba(255, 255, 255, 0.4),
+          transparent);
+      transition: left 0.5s;
+    }
+
+    .service-card:hover::before,
+    .benefit-card:hover::before {
+      left: 100%;
+    }
+
+    .service-card:hover,
+    .benefit-card:hover,
+    .testimonial-card:hover,
+    .faq-card:hover {
+      transform: translateY(-15px) scale(1.02);
+      box-shadow: 0 20px 40px rgba(107, 33, 168, 0.2);
+    }
+
+    .service-card i {
+      background: linear-gradient(135deg, #6b21a8, #9333ea, #ec4899);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+      font-size: 3rem;
+      margin-bottom: 1.5rem;
+      transition: all 0.3s ease;
+    }
+
+    .service-card:hover i {
+      transform: scale(1.1) rotate(5deg);
+    }
+
+    .about-section,
+    .benefits-section,
+    .services-section,
+    .why-choose-section,
+    .industries-section,
+    .testimonials-section,
+    .faq-section,
+    .cta-section {
+      background: #ffffff;
+      padding: 80px 0;
+    }
+
+    .services-section {
+      background: linear-gradient(to bottom, #e5e7eb, #d1d5db);
+    }
+
+    .faq-card .card-header {
+      background: #e5e7eb;
+      border: none;
+      font-weight: 600;
+      color: #6b21a8;
+    }
+
+    .testimonial-card {
+      text-align: center;
+      padding: 2rem;
+    }
+
+    .testimonial-card img {
+      width: 80px;
+      height: 80px;
+      border-radius: 50%;
+      margin-bottom: 1rem;
+      object-fit: cover;
+    }
+
+    /* Enhanced Footer Styles */
+    .enhanced-footer {
+      background: linear-gradient(135deg,
+          #6b21a8 0%,
+          #9333ea 50%,
+          #ec4899 100%);
+      color: #ffffff;
+      padding: 60px 0 0;
+      position: relative;
+    }
+
+    .enhanced-footer::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      height: 5px;
+      background: linear-gradient(90deg, #f87171, #ec4899, #9333ea, #6b21a8);
+    }
+
+    .newsletter-section {
+      background: rgba(255, 255, 255, 0.1);
+      border-radius: 20px;
+      backdrop-filter: blur(10px);
+      margin-bottom: 3rem;
+    }
+
+    .newsletter-title {
+      font-size: 2rem;
+      font-weight: 700;
+      color: #ffffff;
+      margin-bottom: 1rem;
+    }
+
+    .newsletter-subtitle {
+      font-size: 1.1rem;
+      color: rgba(255, 255, 255, 0.9);
+      margin-bottom: 2rem;
+    }
+
+    .newsletter-form .input-group {
+      max-width: 500px;
+      margin: 0 auto;
+    }
+
+    .newsletter-input {
+      border: none;
+      border-radius: 50px 0 0 50px;
+      padding: 15px 20px;
+      font-size: 1rem;
+      background: rgba(255, 255, 255, 0.95);
+    }
+
+    .newsletter-btn {
+      border-radius: 0 50px 50px 0;
+      padding: 15px 25px;
+      border: none;
+    }
+
+    .footer-heading {
+      font-size: 1.3rem;
+      font-weight: 700;
+      color: #ffffff;
+      margin-bottom: 1.5rem;
+      position: relative;
+    }
+
+    .footer-heading::after {
+      content: "";
+      position: absolute;
+      bottom: -5px;
+      left: 0;
+      width: 30px;
+      height: 2px;
+      background: #f87171;
+    }
+
+    .footer-text {
+      color: rgba(255, 255, 255, 0.9);
+      line-height: 1.6;
+      margin-bottom: 1.5rem;
+    }
+
+    .footer-contact p {
+      color: rgba(255, 255, 255, 0.9);
+      margin-bottom: 0.5rem;
+      font-size: 0.95rem;
+    }
+
+    .footer-contact i {
+      color: #f87171;
+      width: 20px;
+    }
+
+    .footer-links {
+      list-style: none;
+      padding: 0;
+    }
+
+    .footer-links li {
+      margin-bottom: 0.5rem;
+    }
+
+    .footer-links a {
+      color: rgba(255, 255, 255, 0.8);
+      text-decoration: none;
+      font-size: 0.95rem;
+      transition: all 0.3s ease;
+    }
+
+    .footer-links a:hover {
+      color: #f87171;
+      padding-left: 5px;
+    }
+
+    .social-links {
+      display: flex;
+      gap: 15px;
+    }
+
+    .social-links a {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      width: 40px;
+      height: 40px;
+      background: rgba(255, 255, 255, 0.1);
+      border-radius: 50%;
+      color: #ffffff;
+      font-size: 1.2rem;
+      transition: all 0.3s ease;
+    }
+
+    .social-links a:hover {
+      background: #f87171;
+      transform: translateY(-3px);
+      box-shadow: 0 5px 15px rgba(248, 113, 113, 0.4);
+    }
+
+    .footer-bottom {
+      border-top: 1px solid rgba(255, 255, 255, 0.2);
+      padding: 20px 0;
+      color: rgba(255, 255, 255, 0.8);
+    }
+
+    /* Welcome Modal Styles */
+    .welcome-modal .modal-content {
+      border: none;
+      border-radius: 20px;
+      background: linear-gradient(145deg, #ffffff, #f8f9fa);
+      box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+    }
+
+    .welcome-icon {
+      width: 100px;
+      height: 100px;
+      object-fit: cover;
+      border: 4px solid #f87171;
+      box-shadow: 0 10px 30px rgba(248, 113, 113, 0.3);
+    }
+
+    .welcome-title {
+      font-size: 2.2rem;
+      font-weight: 700;
+      background: linear-gradient(135deg, #6b21a8, #9333ea, #ec4899);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+    }
+
+    .welcome-subtitle {
+      font-size: 1.1rem;
+      color: #6b21a8;
+      line-height: 1.6;
+    }
+
+    .welcome-form .form-control,
+    .welcome-form .form-select {
+      border: 2px solid #e5e7eb;
+      border-radius: 10px;
+      padding: 12px 15px;
+      transition: all 0.3s ease;
+    }
+
+    .welcome-form .form-control:focus,
+    .welcome-form .form-select:focus {
+      border-color: #9333ea;
+      box-shadow: 0 0 0 0.2rem rgba(147, 51, 234, 0.25);
+      transform: translateY(-2px);
+    }
+
+    @keyframes fadeInDown {
+      from {
+        opacity: 0;
+        transform: translateY(-20px);
+      }
+
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    /* Form Enhancements */
+    .form-control:focus,
+    .form-select:focus {
+      border-color: #9333ea !important;
+      box-shadow: 0 0 0 0.2rem rgba(147, 51, 234, 0.25) !important;
+      transform: translateY(-2px);
+    }
+
+    .form-control:hover,
+    .form-select:hover {
+      border-color: #6b21a8 !important;
+      transform: translateY(-1px);
+    }
+
+    .contact-form-card {
+      transition: all 0.3s ease;
+    }
+
+    .contact-form-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 15px 40px rgba(0, 0, 0, 0.15) !important;
+    }
+
+    @media (max-width: 768px) {
+      .hero-section h1 {
+        font-size: 2.5rem;
+      }
+
+      .hero-section p {
+        font-size: 1.2rem;
+      }
+
+      .section-title {
+        font-size: 2rem;
+      }
+
+      .hero-section {
+        text-align: center !important;
+        padding: 100px 0;
+      }
+
+      .hero-image {
+        margin-top: 2rem;
+        max-width: 300px;
+        margin-left: auto;
+        margin-right: auto;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <!-- Header -->
+  <header class="navbar navbar-expand-lg navbar-dark sticky-top">
+    <div class="container">
+      <a class="navbar-brand finger-paint-regular" href="index.html">AdyTechSolutions</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link active" href="index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="services.html">Services</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="about.html">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="portfolio.html">Portfolio</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="blog.html">Blog</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="contact.html">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </header>
+
+  <!-- Main Content -->
+  <main>
+    <!-- Hero Section -->
+    <section id="home" class="hero-section text-center">
+      <div class="container hero-content">
+        <div class="row align-items-center">
+          <div class="col-lg-6 text-lg-start animate-fade-left">
+            <h1 class="mb-4">
+              Grow Your Business with the Best Digital Marketing Agency
+            </h1>
+            <p class="lead mb-5">
+              AdyTechSolutions delivers expert
+              <strong>social media marketing services</strong>, SEO, and PPC
+              to drive leads, sales, and brand growth for startups,
+              e-commerce, and more.
+            </p>
+            <a href="#contact" class="btn btn-custom btn-lg animate-fade-in">Book a Free Strategy Call</a>
+          </div>
+          <div class="col-lg-6">
+            <div class="hero-image animate-fade-right">
+              <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=600&h=500&fit=crop&crop=center"
+                alt="Digital Marketing Analytics Dashboard" class="img-fluid" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about-section">
+      <div class="container">
+        <h2 class="section-title animate-on-scroll">
+          About AdyTechSolutions
+        </h2>
+        <div class="row align-items-center">
+          <div class="col-lg-6 animate-on-scroll">
+            <p class="lead">
+              At AdyTechSolutions, we're passionate about helping businesses
+              thrive in the digital world. As a
+              <strong>top digital marketing agency</strong>, we specialize in
+              <strong>social media marketing services</strong>, SEO, PPC, and
+              more, delivering tailored strategies for startups, small
+              businesses, and e-commerce brands.
+            </p>
+            <p>
+              With over 4.9 billion people active on social media, platforms
+              like Facebook, Instagram, and LinkedIn are critical for reaching
+              your audience. Our team of certified experts creates
+              <strong>data-driven digital campaigns</strong> to boost
+              engagement, drive traffic, and maximize ROI.
+            </p>
+            <p>
+              Whether you're a B2B company seeking leads or an e-commerce
+              store aiming for sales, our
+              <strong>affordable social media marketing</strong> solutions are
+              designed to deliver results. Based in [Your City], we're proud
+              to be the <strong>top marketing agency near me</strong> for
+              businesses looking to scale.
+            </p>
+            <a href="index.html#contact" class="btn btn-custom mt-3">Get Started Today</a>
+          </div>
+          <div class="col-lg-6 animate-on-scroll">
+            <div class="about-image text-center">
+              <img src="https://images.unsplash.com/photo-1552664730-d307ca884978?w=500&h=400&fit=crop&crop=center"
+                alt="Digital Marketing Team" class="img-fluid rounded shadow-lg"
+                style="border-radius: 20px !important" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Key Services Section -->
+    <section id="services" class="services-section">
+      <div class="container">
+        <h2 class="section-title">Our Core Digital Marketing Services</h2>
+        <p>
+          AdyTechSolutions offers a range of
+          <strong>digital marketing for small businesses</strong> and
+          enterprises, with a focus on
+          <strong>social media marketing services</strong>. Here are our
+          flagship offerings:
+        </p>
+        <div class="row">
+            <div class="col-md-4 mb-4 animate-on-scroll">
+            <article class="card service-card h-100">
+              <img src="https://images.unsplash.com/photo-1467232004584-a241de8bcf5d?w=400&h=200&fit=crop&crop=center"
+                alt="Web Design & Development" class="service-image" />
+              <div class="card-body text-center">
+                <i class="fas fa-laptop-code"></i>
+                <h3 class="card-title">Web Design & Development</h3>
+                <p class="card-text">
+                  Create a stunning, user-friendly website optimized for
+                  conversions and SEO, perfect for startups and e-commerce
+                  brands.
+                </p>
+                <a href="services.html#web" class="btn btn-custom mt-auto">Learn More</a>
+              </div>
+            </article>
+          </div>
+          <div class="col-md-4 mb-4 animate-on-scroll">
+            <article class="card service-card h-100">
+              <img src="https://images.unsplash.com/photo-1432888622747-4eb9a8efeb07?w=400&h=200&fit=crop&crop=center"
+                alt="Search Engine Optimization" class="service-image" />
+              <div class="card-body text-center">
+                <i class="fas fa-search"></i>
+                <h3 class="card-title">Search Engine Optimization</h3>
+                <p class="card-text">
+                  Rank higher on Google with our SEO services, including
+                  keyword research, on-page optimization, and link building,
+                  tailored for local businesses and e-commerce.
+                </p>
+                <a href="services.html#seo" class="btn btn-custom mt-auto">Learn More</a>
+              </div>
+            </article>
+          </div>
+          <div class="col-md-4 mb-4 animate-on-scroll">
+            <article class="card service-card h-100">
+              <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=400&h=200&fit=crop&crop=center"
+                alt="Pay Per Click Advertising" class="service-image" />
+              <div class="card-body text-center">
+                <i class="fas fa-ad"></i>
+                <h3 class="card-title">Pay Per Click Advertising</h3>
+                <p class="card-text">
+                  Drive instant traffic with targeted Google Ads and Bing Ads.
+                  Our <strong>Facebook & Instagram ad experts</strong> also
+                  optimize Meta campaigns for maximum ROI.
+                </p>
+                <a href="services.html#ppc" class="btn btn-custom mt-auto">Learn More</a>
+              </div>
+            </article>
+          </div>
+          <div class="col-md-4 mb-4 animate-on-scroll">
+            <article class="card service-card h-100">
+              <img src="https://images.unsplash.com/photo-1542435503-956c469947f6?w=400&h=200&fit=crop&crop=center"
+                alt="Content Marketing" class="service-image" />
+              <div class="card-body text-center">
+                <i class="fas fa-pen"></i>
+                <h3 class="card-title">Content Marketing</h3>
+                <p class="card-text">
+                  Engage your audience with compelling blogs, videos, and
+                  copywriting that align with your brand and drive
+                  conversions.
+                </p>
+                <a href="services.html#content" class="btn btn-custom mt-auto">Learn More</a>
+              </div>
+            </article>
+          </div>
+          <div class="col-md-4 mb-4 animate-on-scroll">
+            <article class="card service-card h-100">
+              <img src="https://images.unsplash.com/photo-1596526131083-e8c633c948d2?w=400&h=200&fit=crop&crop=center"
+                alt="Email Marketing" class="service-image" />
+              <div class="card-body text-center">
+                <i class="fas fa-envelope"></i>
+                <h3 class="card-title">Email Marketing</h3>
+                <p class="card-text">
+                  Nurture leads with personalized email campaigns that boost
+                  customer loyalty and drive repeat business.
+                </p>
+                <a href="services.html#email" class="btn btn-custom mt-auto">Learn More</a>
+              </div>
+            </article>
+          </div>
+       
+           <div class="col-md-4 mb-4 animate-on-scroll">
+            <article class="card service-card h-100">
+              <img src="https://images.unsplash.com/photo-1611224923853-80b023f02d71?w=400&h=200&fit=crop&crop=center"
+                alt="Social Media Marketing" class="service-image" />
+              <div class="card-body text-center">
+                <i class="fas fa-bullhorn"></i>
+                <h3 class="card-title">Social Media Marketing</h3>
+                <p class="card-text">
+                  Our
+                  <strong>social media strategy for businesses</strong>
+                  includes organic content, paid ads, and influencer
+                  collaborations on platforms like Facebook, Instagram, and
+                  TikTok to drive engagement and sales.
+                </p>
+                <a href="social-media-marketing-services.html" class="btn btn-custom mt-auto">Learn More</a>
+              </div>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Benefits Section -->
+    <section id="benefits" class="benefits-section">
+      <div class="container">
+        <h2 class="section-title">
+          Why Digital Marketing with AdyTechSolutions?
+        </h2>
+        <p>
+          Our <strong>data-driven digital campaigns</strong> deliver
+          measurable results. According to a 2023 HubSpot report, businesses
+          investing in digital marketing, especially social media, see a 2.8x
+          higher ROI. Here’s what you gain:
+        </p>
+        <div class="row">
+          <div class="col-md-4 mb-4 animate-on-scroll">
+            <article class="card benefit-card h-100">
+              <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=400&h=200&fit=crop&crop=center"
+                alt="Brand Visibility" class="service-image" />
+              <div class="card-body text-center">
+                <i class="fas fa-eye fa-2x mb-3" style="
+                      background: linear-gradient(
+                        135deg,
+                        #6b21a8,
+                        #9333ea,
+                        #ec4899
+                      );
+                      -webkit-background-clip: text;
+                      -webkit-text-fill-color: transparent;
+                      background-clip: text;
+                    "></i>
+                <h3 class="card-title">Boost Brand Visibility</h3>
+                <p class="card-text">
+                  Reach millions on social media platforms, increasing brand
+                  awareness and recognition.
+                </p>
+              </div>
+            </article>
+          </div>
+          <div class="col-md-4 mb-4 animate-on-scroll">
+            <article class="card benefit-card h-100">
+              <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=400&h=200&fit=crop&crop=center"
+                alt="Traffic & Leads" class="service-image" />
+              <div class="card-body text-center">
+                <i class="fas fa-traffic-light fa-2x mb-3" style="
+                      background: linear-gradient(
+                        135deg,
+                        #6b21a8,
+                        #9333ea,
+                        #ec4899
+                      );
+                      -webkit-background-clip: text;
+                      -webkit-text-fill-color: transparent;
+                      background-clip: text;
+                    "></i>
+                <h3 class="card-title">Drive Traffic & Leads</h3>
+                <p class="card-text">
+                  Our targeted campaigns funnel high-quality traffic to your
+                  website, converting visitors into leads.
+                </p>
+              </div>
+            </article>
+          </div>
+          <div class="col-md-4 mb-4 animate-on-scroll">
+            <article class="card benefit-card h-100">
+              <img src="https://images.unsplash.com/photo-1556761175-b413da4baf72?w=400&h=200&fit=crop&crop=center"
+                alt="Engagement" class="service-image" />
+              <div class="card-body text-center">
+                <i class="fas fa-heart fa-2x mb-3" style="
+                      background: linear-gradient(
+                        135deg,
+                        #6b21a8,
+                        #9333ea,
+                        #ec4899
+                      );
+                      -webkit-background-clip: text;
+                      -webkit-text-fill-color: transparent;
+                      background-clip: text;
+                    "></i>
+                <h3 class="card-title">Enhance Engagement</h3>
+                <p class="card-text">
+                  Build stronger connections with your audience through
+                  interactive content and community management.
+                </p>
+              </div>
+            </article>
+          </div>
+          <div class="col-md-4 mb-4 animate-on-scroll">
+            <article class="card benefit-card h-100">
+              <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=400&h=200&fit=crop&crop=center"
+                alt="Data-Driven Results" class="service-image" />
+              <div class="card-body text-center">
+                <i class="fas fa-chart-line fa-2x mb-3" style="
+                      background: linear-gradient(
+                        135deg,
+                        #6b21a8,
+                        #9333ea,
+                        #ec4899
+                      );
+                      -webkit-background-clip: text;
+                      -webkit-text-fill-color: transparent;
+                      background-clip: text;
+                    "></i>
+                <h3 class="card-title">Data-Driven Results</h3>
+                <p class="card-text">
+                  Leverage analytics to optimize campaigns for maximum impact
+                  and growth.
+                </p>
+              </div>
+            </article>
+          </div>
+          <div class="col-md-4 mb-4 animate-on-scroll">
+            <article class="card benefit-card h-100">
+              <img src="https://images.unsplash.com/photo-1579621970563-ebec7560ff3e?w=400&h=200&fit=crop&crop=center"
+                alt="High ROI" class="service-image" />
+              <div class="card-body text-center">
+                <i class="fas fa-dollar-sign fa-2x mb-3" style="
+                      background: linear-gradient(
+                        135deg,
+                        #6b21a8,
+                        #9333ea,
+                        #ec4899
+                      );
+                      -webkit-background-clip: text;
+                      -webkit-text-fill-color: transparent;
+                      background-clip: text;
+                    "></i>
+                <h3 class="card-title">High ROI</h3>
+                <p class="card-text">
+                  Our <strong>SMM packages for startups</strong> are designed
+                  to deliver measurable returns on your investment.
+                </p>
+              </div>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Why Choose Us Section -->
+    <section id="why-choose" class="why-choose-section">
+      <div class="container">
+        <h2 class="section-title">Why Choose Us?</h2>
+        <p>
+          As a <strong>top marketing agency near me</strong>, we’re committed
+          to your success. Here’s why businesses trust us:
+        </p>
+        <div class="row">
+          <div class="col-md-6 mb-4 animate-on-scroll">
+            <article class="card benefit-card h-100">
+              <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=400&h=200&fit=crop&crop=center"
+                alt="Transparent Reporting" class="service-image" />
+              <div class="card-body text-center">
+                <i class="fas fa-chart-bar fa-2x mb-3" style="
+                      background: linear-gradient(
+                        135deg,
+                        #6b21a8,
+                        #9333ea,
+                        #ec4899
+                      );
+                      -webkit-background-clip: text;
+                      -webkit-text-fill-color: transparent;
+                      background-clip: text;
+                    "></i>
+                <h3 class="card-title">Transparent Reporting</h3>
+                <p class="card-text">
+                  Get clear, detailed insights into campaign performance with
+                  100% transparency.
+                </p>
+              </div>
+            </article>
+          </div>
+          <div class="col-md-6 mb-4 animate-on-scroll">
+            <article class="card benefit-card h-100">
+              <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=400&h=200&fit=crop&crop=center"
+                alt="Customized Strategies" class="service-image" />
+              <div class="card-body text-center">
+                <i class="fas fa-cogs fa-2x mb-3" style="
+                      background: linear-gradient(
+                        135deg,
+                        #6b21a8,
+                        #9333ea,
+                        #ec4899
+                      );
+                      -webkit-background-clip: text;
+                      -webkit-text-fill-color: transparent;
+                      background-clip: text;
+                    "></i>
+                <h3 class="card-title">Customized Strategies</h3>
+                <p class="card-text">
+                  Our <strong>social media strategy for businesses</strong> is
+                  tailored to your unique goals and audience.
+                </p>
+              </div>
+            </article>
+          </div>
+          <div class="col-md-6 mb-4 animate-on-scroll">
+            <article class="card benefit-card h-100">
+              <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&h=200&fit=crop&crop=center"
+                alt="Certified Experts" class="service-image" />
+              <div class="card-body text-center">
+                <i class="fas fa-certificate fa-2x mb-3" style="
+                      background: linear-gradient(
+                        135deg,
+                        #6b21a8,
+                        #9333ea,
+                        #ec4899
+                      );
+                      -webkit-background-clip: text;
+                      -webkit-text-fill-color: transparent;
+                      background-clip: text;
+                    "></i>
+                <h3 class="card-title">Certified Experts</h3>
+                <p class="card-text">
+                  Our team holds certifications in Meta, Google Ads, and more,
+                  ensuring top-tier expertise.
+                </p>
+              </div>
+            </article>
+          </div>
+          <div class="col-md-6 mb-4 animate-on-scroll">
+            <article class="card benefit-card h-100">
+              <img src="https://images.unsplash.com/photo-1579621970563-ebec7560ff3e?w=400&h=200&fit=crop&crop=center"
+                alt="Affordable Plans" class="service-image" />
+              <div class="card-body text-center">
+                <i class="fas fa-dollar-sign fa-2x mb-3" style="
+                      background: linear-gradient(
+                        135deg,
+                        #6b21a8,
+                        #9333ea,
+                        #ec4899
+                      );
+                      -webkit-background-clip: text;
+                      -webkit-text-fill-color: transparent;
+                      background-clip: text;
+                    "></i>
+                <h3 class="card-title">Affordable Plans</h3>
+                <p class="card-text">
+                  Our
+                  <strong>affordable social media marketing</strong> packages
+                  fit any budget, with flexible options.
+                </p>
+              </div>
+            </article>
+          </div>
+          <div class="col-md-6 mb-4 animate-on-scroll">
+            <article class="card benefit-card h-100">
+              <img src="https://images.unsplash.com/photo-1556761175-4b46a572b786?w=400&h=200&fit=crop&crop=center"
+                alt="24/7 Support" class="service-image" />
+              <div class="card-body text-center">
+                <i class="fas fa-headset fa-2x mb-3" style="
+                      background: linear-gradient(
+                        135deg,
+                        #6b21a8,
+                        #9333ea,
+                        #ec4899
+                      );
+                      -webkit-background-clip: text;
+                      -webkit-text-fill-color: transparent;
+                      background-clip: text;
+                    "></i>
+                <h3 class="card-title">24/7 Support</h3>
+                <p class="card-text">
+                  Our dedicated account managers are available around the
+                  clock to support your campaigns.
+                </p>
+              </div>
+            </article>
+          </div>
+          <div class="col-md-6 mb-4 animate-on-scroll">
+            <article class="card benefit-card h-100">
+              <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=400&h=200&fit=crop&crop=center"
+                alt="Proven Success" class="service-image" />
+              <div class="card-body text-center">
+                <i class="fas fa-trophy fa-2x mb-3" style="
+                      background: linear-gradient(
+                        135deg,
+                        #6b21a8,
+                        #9333ea,
+                        #ec4899
+                      );
+                      -webkit-background-clip: text;
+                      -webkit-text-fill-color: transparent;
+                      background-clip: text;
+                    "></i>
+                <h3 class="card-title">Proven Success</h3>
+                <p class="card-text">
+                  Explore our <a href="index.html#portfolio">portfolio</a> to
+                  see how we've driven results for clients.
+                </p>
+              </div>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Industries We Serve Section -->
+    <section id="industries" class="industries-section">
+      <div class="container">
+        <h2 class="section-title">Industries We Empower</h2>
+        <p>
+          Our <strong>digital marketing for small businesses</strong> and
+          enterprises spans multiple sectors, delivering tailored solutions:
+        </p>
+        <div class="row">
+          <div class="col-md-4 mb-3">
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item">
+                <i class="fas fa-check-circle me-2" style="color: #6b21a8"></i>E-commerce
+              </li>
+              <li class="list-group-item">
+                <i class="fas fa-check-circle me-2" style="color: #6b21a8"></i>Real Estate
+              </li>
+              <li class="list-group-item">
+                <i class="fas fa-check-circle me-2" style="color: #6b21a8"></i>Education & Online Courses
+              </li>
+            </ul>
+          </div>
+          <div class="col-md-4 mb-3">
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item">
+                <i class="fas fa-check-circle me-2" style="color: #6b21a8"></i>Healthcare
+              </li>
+              <li class="list-group-item">
+                <i class="fas fa-check-circle me-2" style="color: #6b21a8"></i>Restaurants & Cafes
+              </li>
+              <li class="list-group-item">
+                <i class="fas fa-check-circle me-2" style="color: #6b21a8"></i>Travel & Tourism
+              </li>
+            </ul>
+          </div>
+          <div class="col-md-4 mb-3">
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item">
+                <i class="fas fa-check-circle me-2" style="color: #6b21a8"></i>SaaS Companies
+              </li>
+              <li class="list-group-item">
+                <i class="fas fa-check-circle me-2" style="color: #6b21a8"></i>Local Businesses
+              </li>
+              <li class="list-group-item">
+                <i class="fas fa-check-circle me-2" style="color: #6b21a8"></i>Coaches & Consultants
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="testimonials-section">
+      <div class="container">
+        <h2 class="section-title">What Our Clients Say</h2>
+        <p>
+          Hear from businesses that have grown with our
+          <strong>social media marketing services</strong> and digital
+          strategies:
+        </p>
+        <div class="row">
+          <div class="col-md-4 mb-4 animate-on-scroll">
+            <article class="card testimonial-card h-100">
+              <div class="card-body text-center">
+                <img src="https://images.unsplash.com/photo-1494790108755-2616b612b786?w=80&h=80&fit=crop&crop=face"
+                  alt="Sarah M. - E-commerce Owner" class="mb-3 rounded-circle"
+                  style="width: 80px; height: 80px; object-fit: cover" />
+                <div class="mb-3">
+                  <i class="fas fa-star" style="color: #ffd700"></i>
+                  <i class="fas fa-star" style="color: #ffd700"></i>
+                  <i class="fas fa-star" style="color: #ffd700"></i>
+                  <i class="fas fa-star" style="color: #ffd700"></i>
+                  <i class="fas fa-star" style="color: #ffd700"></i>
+                </div>
+                <p class="card-text">
+                  "AdyTechSolutions transformed our Instagram presence,
+                  doubling our engagement in just three months. Their
+                  <strong>Facebook & Instagram ad experts</strong> are
+                  top-notch!"
+                </p>
+                <h5 class="card-title">Sarah M., E-commerce Owner</h5>
+              </div>
+            </article>
+          </div>
+          <div class="col-md-4 mb-4 animate-on-scroll">
+            <article class="card testimonial-card h-100">
+              <div class="card-body text-center">
+                <img src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=80&h=80&fit=crop&crop=face"
+                  alt="James T. - SaaS Founder" class="mb-3 rounded-circle"
+                  style="width: 80px; height: 80px; object-fit: cover" />
+                <div class="mb-3">
+                  <i class="fas fa-star" style="color: #ffd700"></i>
+                  <i class="fas fa-star" style="color: #ffd700"></i>
+                  <i class="fas fa-star" style="color: #ffd700"></i>
+                  <i class="fas fa-star" style="color: #ffd700"></i>
+                  <i class="fas fa-star" style="color: #ffd700"></i>
+                </div>
+                <p class="card-text">
+                  "Their SEO and PPC campaigns drove a 150% increase in leads
+                  for our SaaS company. Highly recommend this
+                  <strong>top marketing agency</strong>."
+                </p>
+                <h5 class="card-title">James T., SaaS Founder</h5>
+              </div>
+            </article>
+          </div>
+          <div class="col-md-4 mb-4 animate-on-scroll">
+            <article class="card testimonial-card h-100">
+              <div class="card-body text-center">
+                <img src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=80&h=80&fit=crop&crop=face"
+                  alt="Emily R. - Restaurant Manager" class="mb-3 rounded-circle"
+                  style="width: 80px; height: 80px; object-fit: cover" />
+                <div class="mb-3">
+                  <i class="fas fa-star" style="color: #ffd700"></i>
+                  <i class="fas fa-star" style="color: #ffd700"></i>
+                  <i class="fas fa-star" style="color: #ffd700"></i>
+                  <i class="fas fa-star" style="color: #ffd700"></i>
+                  <i class="fas fa-star" style="color: #ffd700"></i>
+                </div>
+                <p class="card-text">
+                  "The team's
+                  <strong>affordable social media marketing</strong> packages
+                  helped our restaurant chain boost local engagement.
+                  Fantastic support!"
+                </p>
+                <h5 class="card-title">Emily R., Restaurant Manager</h5>
+              </div>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section id="faq" class="faq-section">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-6 animate-on-scroll">
+            <div class="faq-image text-center mb-4">
+              <img src="https://images.unsplash.com/photo-1559526324-4b87b5e36e44?w=500&h=400&fit=crop&crop=center"
+                alt="FAQ Support" class="img-fluid rounded shadow-lg" style="border-radius: 20px !important" />
+            </div>
+          </div>
+          <div class="col-lg-6">
+            <h2 class="section-title animate-on-scroll">
+              Frequently Asked Questions
+            </h2>
+            <div class="accordion" id="faqAccordion">
+              <div class="card faq-card mb-3 animate-on-scroll">
+                <div class="card-header" id="faq1">
+                  <h3 class="mb-0">
+                    <button class="btn btn-link text-decoration-none" type="button" data-bs-toggle="collapse"
+                      data-bs-target="#collapse1" aria-expanded="true" aria-controls="collapse1">
+                      <i class="fas fa-question-circle me-2" style="
+                            background: linear-gradient(
+                              135deg,
+                              #6b21a8,
+                              #9333ea,
+                              #ec4899
+                            );
+                            -webkit-background-clip: text;
+                            -webkit-text-fill-color: transparent;
+                            background-clip: text;
+                          "></i>
+                      What is digital marketing?
+                    </button>
+                  </h3>
+                </div>
+                <div id="collapse1" class="collapse show" aria-labelledby="faq1" data-bs-parent="#faqAccordion">
+                  <div class="card-body">
+                    Digital marketing involves promoting your brand online
+                    through channels like social media, SEO, PPC, and email to
+                    drive traffic, leads, and sales.
+                  </div>
+                </div>
+              </div>
+              <div class="card faq-card mb-3 animate-on-scroll">
+                <div class="card-header" id="faq2">
+                  <h3 class="mb-0">
+                    <button class="btn btn-link text-decoration-none collapsed" type="button" data-bs-toggle="collapse"
+                      data-bs-target="#collapse2" aria-expanded="false" aria-controls="collapse2">
+                      <i class="fas fa-thumbs-up me-2" style="
+                            background: linear-gradient(
+                              135deg,
+                              #6b21a8,
+                              #9333ea,
+                              #ec4899
+                            );
+                            -webkit-background-clip: text;
+                            -webkit-text-fill-color: transparent;
+                            background-clip: text;
+                          "></i>
+                      Why choose social media marketing?
+                    </button>
+                  </h3>
+                </div>
+                <div id="collapse2" class="collapse" aria-labelledby="faq2" data-bs-parent="#faqAccordion">
+                  <div class="card-body">
+                    Social media marketing connects you with billions of
+                    users, boosting brand awareness and engagement through
+                    platforms like Instagram, Facebook, and LinkedIn.
+                  </div>
+                </div>
+              </div>
+              <div class="card faq-card mb-3 animate-on-scroll">
+                <div class="card-header" id="faq3">
+                  <h3 class="mb-0">
+                    <button class="btn btn-link text-decoration-none collapsed" type="button" data-bs-toggle="collapse"
+                      data-bs-target="#collapse3" aria-expanded="false" aria-controls="collapse3">
+                      <i class="fas fa-dollar-sign me-2" style="
+                            background: linear-gradient(
+                              135deg,
+                              #6b21a8,
+                              #9333ea,
+                              #ec4899
+                            );
+                            -webkit-background-clip: text;
+                            -webkit-text-fill-color: transparent;
+                            background-clip: text;
+                          "></i>
+                      How much do your services cost?
+                    </button>
+                  </h3>
+                </div>
+                <div id="collapse3" class="collapse" aria-labelledby="faq3" data-bs-parent="#faqAccordion">
+                  <div class="card-body">
+                    Our <strong>SMM packages for startups</strong> and
+                    businesses are customized. Contact us for a free
+                    consultation to discuss pricing.
+                  </div>
+                </div>
+              </div>
+              <div class="card faq-card mb-3 animate-on-scroll">
+                <div class="card-header" id="faq4">
+                  <h3 class="mb-0">
+                    <button class="btn btn-link text-decoration-none collapsed" type="button" data-bs-toggle="collapse"
+                      data-bs-target="#collapse4" aria-expanded="false" aria-controls="collapse4">
+                      <i class="fas fa-clock me-2" style="
+                            background: linear-gradient(
+                              135deg,
+                              #6b21a8,
+                              #9333ea,
+                              #ec4899
+                            );
+                            -webkit-background-clip: text;
+                            -webkit-text-fill-color: transparent;
+                            background-clip: text;
+                          "></i>
+                      How long does it take to see results?
+                    </button>
+                  </h3>
+                </div>
+                <div id="collapse4" class="collapse" aria-labelledby="faq4" data-bs-parent="#faqAccordion">
+                  <div class="card-body">
+                    Results vary, but most clients see engagement within 1–3
+                    months and significant ROI within 3–6 months.
+                  </div>
+                </div>
+              </div>
+              <div class="card faq-card mb-3 animate-on-scroll">
+                <div class="card-header" id="faq5">
+                  <h3 class="mb-0">
+                    <button class="btn btn-link text-decoration-none collapsed" type="button" data-bs-toggle="collapse"
+                      data-bs-target="#collapse5" aria-expanded="false" aria-controls="collapse5">
+                      <i class="fas fa-cogs me-2" style="
+                            background: linear-gradient(
+                              135deg,
+                              #6b21a8,
+                              #9333ea,
+                              #ec4899
+                            );
+                            -webkit-background-clip: text;
+                            -webkit-text-fill-color: transparent;
+                            background-clip: text;
+                          "></i>
+                      Do you offer customized plans?
+                    </button>
+                  </h3>
+                </div>
+                <div id="collapse5" class="collapse" aria-labelledby="faq5" data-bs-parent="#faqAccordion">
+                  <div class="card-body">
+                    Yes, we offer tailored
+                    <strong>affordable social media marketing</strong> plans
+                    to suit your budget and goals. Let's discuss your needs!
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Call to Action Section -->
+    <section id="contact" class="cta-section">
+      <div class="container">
+        <h2 class="section-title animate-on-scroll">
+          Ready to Scale Your Business?
+        </h2>
+        <div class="row align-items-center">
+          <p class="lead mb-5 animate-on-scroll">
+            Partner with AdyTechSolutions, the
+            <strong>best digital marketing agency</strong>, to drive growth
+            with our <strong>social media marketing services</strong>. Fill
+            out the form below to get started!
+          </p>
+          <div class="col-lg-6 animate-on-scroll">
+            <div class="contact-image text-center mb-4">
+              <img src="https://images.unsplash.com/photo-1553484771-371a605b060b?w=500&h=400&fit=crop&crop=center"
+                alt="Contact Us" class="img-fluid rounded shadow-lg" style="border-radius: 20px !important" />
+            </div>
+          </div>
+          <div class="col-lg-6">
+            <div class="contact-form-card animate-on-scroll">
+              <form id="contactForm" class="p-4" action="https://formsubmit.co/info@adytechsolutions.com" method="POST" style="
+                    background: linear-gradient(145deg, #ffffff, #f8f9fa);
+                    border-radius: 20px;
+                    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+                  ">
+                   <input name="_captcha" type="hidden" value="false" />
+            <input name="_next" type="hidden" value="https://adytechsolutions.com" />
+                <div class="row mb-4">
+                  <div class="col-md-6 mb-3">
+                    <label for="name" class="form-label fw-bold" style="color: #6b21a8">
+                      <i class="fas fa-user me-2" style="
+                            background: linear-gradient(
+                              135deg,
+                              #6b21a8,
+                              #9333ea,
+                              #ec4899
+                            );
+                            -webkit-background-clip: text;
+                            -webkit-text-fill-color: transparent;
+                            background-clip: text;
+                          "></i>
+                      Full Name
+                    </label>
+                    <input type="text" class="form-control rounded-3" id="name" name="name" placeholder="Your Name" required style="
+                          border: 2px solid #e5e7eb;
+                          transition: all 0.3s ease;
+                        " />
+                  </div>
+                  <div class="col-md-6 mb-3">
+                    <label for="email" class="form-label fw-bold" style="color: #6b21a8">
+                      <i class="fas fa-envelope me-2" style="
+                            background: linear-gradient(
+                              135deg,
+                              #6b21a8,
+                              #9333ea,
+                              #ec4899
+                            );
+                            -webkit-background-clip: text;
+                            -webkit-text-fill-color: transparent;
+                            background-clip: text;
+                          "></i>
+                      Email Address
+                    </label>
+                    <input type="email" class="form-control rounded-3" id="email" name="email" placeholder="Your Email" required
+                      style="
+                          border: 2px solid #e5e7eb;
+                          transition: all 0.3s ease;
+                        " />
+                  </div>
+                </div>
+                <div class="mb-4">
+                  <label for="company" class="form-label fw-bold" style="color: #6b21a8">
+                    <i class="fas fa-building me-2" style="
+                          background: linear-gradient(
+                            135deg,
+                            #6b21a8,
+                            #9333ea,
+                            #ec4899
+                          );
+                          -webkit-background-clip: text;
+                          -webkit-text-fill-color: transparent;
+                          background-clip: text;
+                        "></i>
+                    Company Name
+                  </label>
+                  <input type="text" class="form-control rounded-3" id="company" name="company" placeholder="Your Company (Optional)"
+                    style="
+                        border: 2px solid #e5e7eb;
+                        transition: all 0.3s ease;
+                      " />
+                </div>
+                <div class="mb-4">
+                  <label for="service" class="form-label fw-bold" style="color: #6b21a8">
+                    <i class="fas fa-cogs me-2" style="
+                          background: linear-gradient(
+                            135deg,
+                            #6b21a8,
+                            #9333ea,
+                            #ec4899
+                          );
+                          -webkit-background-clip: text;
+                          -webkit-text-fill-color: transparent;
+                          background-clip: text;
+                        "></i>
+                    Interested Service
+                  </label>
+                  <select class="form-select rounded-3" id="service" name="service" required style="
+                        border: 2px solid #e5e7eb;
+                        transition: all 0.3s ease;
+                      ">
+                    <option value="">Select a Service</option>
+                    <option value="Social Media Marketing">
+                      Social Media Marketing
+                    </option>
+                    <option value="SEO">Search Engine Optimization</option>
+                    <option value="PPC">Pay Per Click Advertising</option>
+                    <option value="Content Marketing">
+                      Content Marketing
+                    </option>
+                    <option value="Email Marketing">Email Marketing</option>
+                    <option value="Web Design">
+                      Web Design & Development
+                    </option>
+                  </select>
+                </div>
+                <div class="mb-4">
+                  <label for="message" class="form-label fw-bold" style="color: #6b21a8">
+                    <i class="fas fa-comment me-2" style="
+                          background: linear-gradient(
+                            135deg,
+                            #6b21a8,
+                            #9333ea,
+                            #ec4899
+                          );
+                          -webkit-background-clip: text;
+                          -webkit-text-fill-color: transparent;
+                          background-clip: text;
+                        "></i>
+                    Message
+                  </label>
+                  <textarea class="form-control rounded-3" id="message" name="message" rows="5"
+                    placeholder="Tell us about your project" required style="
+                        border: 2px solid #e5e7eb;
+                        transition: all 0.3s ease;
+                      "></textarea>
+                </div>
+                <button type="submit" class="btn btn-custom btn-lg w-100">
+                  <i class="fas fa-rocket me-2"></i>
+                  Book a Strategy Call
+                </button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+
+       
+    </section>
+  </main>
+
+  <!-- Enhanced Footer -->
+  <footer class="enhanced-footer">
+    <div class="container">
+      <!-- Newsletter Section -->
+      <div class="newsletter-section text-center py-5 mb-5">
+        <div class="row justify-content-center">
+          <div class="col-lg-8">
+            <h3 class="newsletter-title mb-3">
+              Stay Updated with Digital Marketing Tips!
+            </h3>
+            <p class="newsletter-subtitle mb-4">
+              Get exclusive insights, industry trends, and marketing
+              strategies delivered to your inbox weekly.
+            </p>
+            <form id="newsletterForm" class="newsletter-form">
+              <div class="input-group">
+                <input type="email" class="form-control newsletter-input" placeholder="Enter your email address"
+                  required />
+                <button class="btn btn-custom newsletter-btn" type="submit">
+                  <i class="fas fa-paper-plane me-2"></i>Subscribe Now
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+
+      <!-- Main Footer Content -->
+      <div class="row">
+        <!-- Company Info -->
+        <div class="col-lg-4 col-md-6 mb-4">
+          <h5 class="footer-heading">AdyTechSolutions</h5>
+          <p class="footer-text">
+            Your trusted partner for digital marketing success. We help
+            businesses grow through strategic social media marketing, SEO,
+            PPC, and comprehensive digital solutions.
+          </p>
+          <div class="footer-contact">
+            <p>
+              <i class="fas fa-envelope me-2"></i> info@adytechsolutions.com
+            </p>
+            <p><i class="fas fa-phone me-2"></i> +91 97999 96948</p>
+            <p>
+              <i class="fas fa-map-marker-alt me-2"></i> 115-116, Jan Path,
+              Block D, Nirman Nagar, Brijlalpura, Jaipur, Rajasthan 302019
+            </p>
+          </div>
+        </div>
+
+        <!-- Services -->
+        <div class="col-lg-2 col-md-6 mb-4">
+          <h5 class="footer-heading">Services</h5>
+          <ul class="footer-links">
+            <li><a href="#services">Social Media Marketing</a></li>
+            <li><a href="#services">SEO Optimization</a></li>
+            <li><a href="#services">PPC Advertising</a></li>
+            <li><a href="#services">Content Marketing</a></li>
+            <li><a href="#services">Email Marketing</a></li>
+            <li><a href="#services">Web Development</a></li>
+          </ul>
+        </div>
+
+        <!-- Company -->
+        <div class="col-lg-2 col-md-6 mb-4">
+          <h5 class="footer-heading">Company</h5>
+          <ul class="footer-links">
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="portfolio.html">Portfolio</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="#testimonials">Testimonials</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="#">Careers</a></li>
+          </ul>
+        </div>
+
+        <!-- Resources -->
+        <div class="col-lg-2 col-md-6 mb-4">
+          <h5 class="footer-heading">Resources</h5>
+          <ul class="footer-links">
+            <li><a href="#faq">FAQ</a></li>
+            <li><a href="#">Case Studies</a></li>
+            <li><a href="#">Free Tools</a></li>
+            <li><a href="#">Marketing Guide</a></li>
+            <li><a href="#">Industry Reports</a></li>
+            <li><a href="#">Webinars</a></li>
+          </ul>
+        </div>
+
+        <!-- Social & Legal -->
+        <div class="col-lg-2 col-md-6 mb-4">
+          <h5 class="footer-heading">Connect</h5>
+          <div class="social-links mb-3">
+            <a href="#" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+            <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+            <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+            <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+            <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+          </div>
+          <ul class="footer-links">
+            <li><a href="#">Privacy Policy</a></li>
+            <li><a href="#">Terms of Service</a></li>
+            <li><a href="#">Cookie Policy</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Bottom Footer -->
+      <div class="footer-bottom text-center pt-4 mt-4">
+        <p class="mb-0">
+          © 2024 AdyTechSolutions. All rights reserved. | Designed with ❤️ for
+          your digital success.
+        </p>
+      </div>
+    </div>
+  </footer>
+  <!-- add a whatsapp button when user click on it give redirect them into a whatsapp chat with msg ( Work with you in your company) -->
+
+  <a href="https://wa.me/+919799996948?text=Work%20with%20you%20in%20your%20company"
+    class="btn btn-success position-fixed d-flex align-items-center justify-content-center"
+    style="right: 20px; bottom: 20px; width: 50px; height: 50px; border-radius: 50%; z-index: 999;" target="_blank">
+    <i class="fa-brands fa-whatsapp fa-2xl"></i>
+  </a>
+  <!-- Popup Modal -->
+  <div class="modal fade" id="welcomeModal" tabindex="-1" aria-labelledby="welcomeModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg">
+      <div class="modal-content welcome-modal">
+        <div class="modal-header border-0">
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body text-center p-5">
+          <div class="welcome-content">
+            <img src="https://images.unsplash.com/photo-1557804506-669a67965ba0?w=100&h=100&fit=crop&crop=center"
+              alt="Welcome" class="welcome-icon mb-4 rounded-circle" />
+            <h2 class="welcome-title mb-3">
+              Welcome to AdyTechSolutions! 🚀
+            </h2>
+            <p class="welcome-subtitle mb-4">
+              Ready to transform your digital presence? Get a
+              <strong>FREE Digital Marketing Audit</strong> worth $500!
+            </p>
+
+            
+                   <form id="welcomeForm" class=" welcome-form" action="https://formsubmit.co/info@adytechsolutions.com" method="POST" >
+                   <input name="_captcha" type="hidden" value="false" />
+            <input name="_next" type="hidden" value="https://adytechsolutions.com" />
+              <div class="row mb-3">
+                <div class="col-md-6 mb-3">
+                  <input type="text" class="form-control" placeholder="Your Name" required />
+                </div>
+                <div class="col-md-6 mb-3">
+                  <input type="email" class="form-control" placeholder="Your Email" required />
+                </div>
+              </div>
+              <div class="mb-3">
+                <input type="text" class="form-control" placeholder="Your Website URL (Optional)" />
+              </div>
+              <div class="mb-4">
+                <select class="form-select" required>
+                  <option value="">What's your main goal?</option>
+                  <option value="increase-traffic">
+                    Increase Website Traffic
+                  </option>
+                  <option value="generate-leads">Generate More Leads</option>
+                  <option value="boost-sales">Boost Online Sales</option>
+                  <option value="brand-awareness">
+                    Build Brand Awareness
+                  </option>
+                  <option value="social-media">Grow Social Media</option>
+                </select>
+              </div>
+              <button type="submit" class="btn btn-custom btn-lg w-100 mb-3">
+                <i class="fas fa-gift me-2"></i>Get My FREE Audit Now!
+              </button>
+              <p class="small text-muted">
+                No spam, just valuable insights. Unsubscribe anytime.
+              </p>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Bootstrap 5 JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"></script>
+  <!-- Font Awesome JS -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/js/all.min.js"></script>
+  <script>
+   
+
+    // Smooth scrolling for anchor links
+    document
+      .querySelectorAll("a.nav-link, a.btn-custom")
+      .forEach((anchor) => {
+        anchor.addEventListener("click", function (e) {
+          if (this.getAttribute("href").startsWith("#")) {
+            e.preventDefault();
+            const targetId = this.getAttribute("href");
+            document
+              .querySelector(targetId)
+              .scrollIntoView({ behavior: "smooth" });
+          }
+        });
+      });
+
+    // Navbar scroll effect
+    window.addEventListener("scroll", function () {
+      const navbar = document.querySelector(".navbar");
+      if (window.scrollY > 50) {
+        navbar.classList.add("scrolled");
+      } else {
+        navbar.classList.remove("scrolled");
+      }
+    });
+
+    // Scroll animations
+    const observerOptions = {
+      threshold: 0.1,
+      rootMargin: "0px 0px -50px 0px",
+    };
+
+    const observer = new IntersectionObserver(function (entries) {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add("visible");
+        }
+      });
+    }, observerOptions);
+
+    // Observe all elements with animate-on-scroll class
+    document.querySelectorAll(".animate-on-scroll").forEach((el) => {
+      observer.observe(el);
+    });
+
+    // Add stagger effect to service cards
+    const serviceCards = document.querySelectorAll(".service-card");
+    serviceCards.forEach((card, index) => {
+      card.style.animationDelay = `${index * 0.2}s`;
+    });
+
+    // Add pulse animation to icons on hover
+    document
+      .querySelectorAll(".service-card i, .benefit-card i")
+      .forEach((icon) => {
+        icon.addEventListener("mouseenter", function () {
+          this.style.animation = "pulse 0.6s ease-in-out";
+        });
+        icon.addEventListener("animationend", function () {
+          this.style.animation = "";
+        });
+      });
+
+    // Parallax effect for hero section
+    window.addEventListener("scroll", function () {
+      const scrolled = window.pageYOffset;
+      const parallax = document.querySelector(".hero-section::before");
+      if (parallax) {
+        const speed = scrolled * 0.5;
+        parallax.style.transform = `translateY(${speed}px)`;
+      }
+    });
+
+    // Welcome Modal - Show on page load
+    window.addEventListener("load", function () {
+      // Check if user has seen the modal before (using localStorage)
+      const hasSeenModal = localStorage.getItem("hasSeenWelcomeModal");
+
+      if (!hasSeenModal) {
+        setTimeout(() => {
+          const welcomeModal = new bootstrap.Modal(
+            document.getElementById("welcomeModal")
+          );
+          welcomeModal.show();
+        }, 2000); // Show after 2 seconds
+      }
+    });
+
+    // Welcome Form Submission
+    document
+      .getElementById("welcomeForm")
+      .addEventListener("submit", function (event) {
+        event.preventDefault();
+
+        // Get form data
+        const formData = new FormData(this);
+        const name = this.querySelector(
+          'input[placeholder="Your Name"]'
+        ).value;
+        const email = this.querySelector(
+          'input[placeholder="Your Email"]'
+        ).value;
+        const website = this.querySelector(
+          'input[placeholder="Your Website URL (Optional)"]'
+        ).value;
+        const goal = this.querySelector("select").value;
+
+        if (name && email && goal) {
+          // Close modal
+          const welcomeModal = bootstrap.Modal.getInstance(
+            document.getElementById("welcomeModal")
+          );
+          welcomeModal.hide();
+
+          // Mark as seen
+          localStorage.setItem("hasSeenWelcomeModal", "true");
+
+          // Show success message
+          setTimeout(() => {
+            alert(
+              ` Thank you ${name}! Your FREE Digital Marketing Audit request has been received. Our team will contact you within 24 hours with your personalized audit report!`
+            );
+          }, 500);
+
+          // Reset form
+          this.reset();
+        } else {
+          alert(
+            "Please fill out all required fields to get your FREE audit."
+          );
+        }
+      });
+
+    // Newsletter Form Submission
+    document
+      .getElementById("newsletterForm")
+      .addEventListener("submit", function (event) {
+        event.preventDefault();
+
+        const email = this.querySelector(".newsletter-input").value;
+
+        if (email) {
+          // Show success message
+          alert(
+            " Thank you for subscribing! You'll receive our weekly digital marketing insights in your inbox."
+          );
+
+          // Reset form
+          this.reset();
+
+          // Add visual feedback
+          const button = this.querySelector(".newsletter-btn");
+          const originalText = button.innerHTML;
+          button.innerHTML = '<i class="fas fa-check me-2"></i>Subscribed!';
+          button.disabled = true;
+
+          setTimeout(() => {
+            button.innerHTML = originalText;
+            button.disabled = false;
+          }, 3000);
+        }
+      });
+
+    // Close modal when clicking outside or on close button
+    document
+      .getElementById("welcomeModal")
+      .addEventListener("hidden.bs.modal", function () {
+        localStorage.setItem("hasSeenWelcomeModal", "true");
+      });
+
+    // Add floating animation to newsletter section
+    const newsletterSection = document.querySelector(".newsletter-section");
+    if (newsletterSection) {
+      newsletterSection.style.animation = "float 6s ease-in-out infinite";
+    }
+  </script>
+
+</body>
+
+</html>

@@ -1,0 +1,771 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description"
+    content="Contact AdyTechSolutions for expert social media marketing, SEO, and PPC services. Book a free consultation with the best digital marketing agency!">
+  <meta name="keywords"
+    content="best digital marketing agency, social media marketing services, digital marketing for small businesses, affordable SMM agency, top marketing agency near me">
+  <meta name="author" content="AdyTechSolutions">
+  <meta property="og:title" content="Contact Us | AdyTechSolutions">
+  <meta property="og:description"
+    content="Get in touch with AdyTechSolutions for expert digital marketing and social media strategies. Book your free consultation today!">
+  <meta property="og:image"
+    content="https://images.unsplash.com/photo-1553484771-371a605b060b?w=1200&h=630&fit=crop&crop=center">
+  <meta property="og:url" content="https://www.adytechsolutions.com/contact">
+  <title>Contact Us | AdyTechSolutions - Best Digital Marketing Agency</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+  <!-- font  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Finger+Paint&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Inter', sans-serif;
+      background-color: #E5E7EB;
+      scroll-behavior: smooth;
+      line-height: 1.7;
+    }
+
+    .finger-paint-regular {
+      font-family: "Finger Paint", sans-serif;
+      font-weight: 400;
+      font-style: normal;
+    }
+
+    header.navbar {
+      background: linear-gradient(to right, #6B21A8, #9333EA);
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      padding: 1rem 0;
+    }
+
+    .navbar-brand,
+    .nav-link {
+      color: #ffffff !important;
+      font-weight: 600;
+      transition: color 0.3s;
+    }
+
+    .nav-link:hover {
+      color: #F87171 !important;
+    }
+
+    .hero-section {
+      background: linear-gradient(135deg, #6B21A8 0%, #9333EA 50%, #EC4899 100%);
+      color: white;
+      padding: 150px 0;
+      position: relative;
+      overflow: hidden;
+      border-bottom: 5px solid #F87171;
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+    }
+
+    .hero-section::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background: url('https://images.unsplash.com/photo-1556761175-b413da4baf72?w=1920&h=800&fit=crop&crop=center') no-repeat center center/cover;
+      opacity: 0.2;
+      z-index: 0;
+    }
+
+    .hero-section::after {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 1000"><defs><radialGradient id="a" cx="50%" cy="50%" r="50%"><stop offset="0%" stop-color="%23ffffff" stop-opacity="0.1"/><stop offset="100%" stop-color="%23ffffff" stop-opacity="0"/></radialGradient></defs><circle cx="200" cy="200" r="100" fill="url(%23a)"/><circle cx="800" cy="300" r="150" fill="url(%23a)"/><circle cx="400" cy="700" r="120" fill="url(%23a)"/></svg>');
+      animation: float 6s ease-in-out infinite;
+      opacity: 0.15;
+      z-index: 0;
+    }
+
+    .hero-content {
+      position: relative;
+      z-index: 1;
+    }
+
+    .hero-section h1 {
+      font-size: 3.5rem;
+      font-weight: 700;
+      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+      animation: fadeInDown 1s ease-out;
+      margin-bottom: 1.5rem;
+    }
+
+    .btn-custom {
+      background: linear-gradient(135deg, #F87171, #EC4899);
+      color: #ffffff;
+      font-weight: 600;
+      padding: 0.75rem 2rem;
+      border-radius: 50px;
+      border: none;
+      position: relative;
+      overflow: hidden;
+      transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+      text-decoration: none;
+      display: inline-block;
+    }
+
+    .btn-custom::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: -100%;
+      width: 100%;
+      height: 100%;
+      background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.3), transparent);
+      transition: left 0.5s;
+    }
+
+    .btn-custom:hover::before {
+      left: 100%;
+    }
+
+    .btn-custom:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 10px 25px rgba(248, 113, 113, 0.4);
+      color: #ffffff;
+    }
+
+    .section-title {
+      font-size: 2.5rem;
+      font-weight: 700;
+      color: #6B21A8;
+      margin-bottom: 3rem;
+      position: relative;
+      text-align: center;
+    }
+
+    .section-title::after {
+      content: '';
+      width: 60px;
+      height: 4px;
+      background: #F87171;
+      position: absolute;
+      bottom: -10px;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+
+    .contact-section {
+      background: #E5E7EB;
+      padding: 80px 0;
+    }
+
+    .contact-info i {
+      color: #6B21A8;
+      font-size: 1.5rem;
+      margin-right: 1rem;
+    }
+
+    /* Enhanced Footer Styles */
+    .enhanced-footer {
+      background: linear-gradient(135deg, #6B21A8 0%, #9333EA 50%, #EC4899 100%);
+      color: #ffffff;
+      padding: 60px 0 0;
+      position: relative;
+    }
+
+    .enhanced-footer::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      height: 5px;
+      background: linear-gradient(90deg, #F87171, #EC4899, #9333EA, #6B21A8);
+    }
+
+    .newsletter-section {
+      background: rgba(255, 255, 255, 0.1);
+      border-radius: 20px;
+      backdrop-filter: blur(10px);
+      margin-bottom: 3rem;
+    }
+
+    .newsletter-title {
+      font-size: 2rem;
+      font-weight: 700;
+      color: #ffffff;
+      margin-bottom: 1rem;
+    }
+
+    .newsletter-subtitle {
+      font-size: 1.1rem;
+      color: rgba(255, 255, 255, 0.9);
+      margin-bottom: 2rem;
+    }
+
+    .newsletter-form .input-group {
+      max-width: 500px;
+      margin: 0 auto;
+    }
+
+    .newsletter-input {
+      border: none;
+      border-radius: 50px 0 0 50px;
+      padding: 15px 20px;
+      font-size: 1rem;
+      background: rgba(255, 255, 255, 0.95);
+    }
+
+    .newsletter-btn {
+      border-radius: 0 50px 50px 0;
+      padding: 15px 25px;
+      border: none;
+    }
+
+    .footer-heading {
+      font-size: 1.3rem;
+      font-weight: 700;
+      color: #ffffff;
+      margin-bottom: 1.5rem;
+      position: relative;
+    }
+
+    .footer-heading::after {
+      content: '';
+      position: absolute;
+      bottom: -5px;
+      left: 0;
+      width: 30px;
+      height: 2px;
+      background: #F87171;
+    }
+
+    .footer-text {
+      color: rgba(255, 255, 255, 0.9);
+      line-height: 1.6;
+      margin-bottom: 1.5rem;
+    }
+
+    .footer-contact p {
+      color: rgba(255, 255, 255, 0.9);
+      margin-bottom: 0.5rem;
+      font-size: 0.95rem;
+    }
+
+    .footer-contact i {
+      color: #F87171;
+      width: 20px;
+    }
+
+    .footer-links {
+      list-style: none;
+      padding: 0;
+    }
+
+    .footer-links li {
+      margin-bottom: 0.5rem;
+    }
+
+    .footer-links a {
+      color: rgba(255, 255, 255, 0.8);
+      text-decoration: none;
+      font-size: 0.95rem;
+      transition: all 0.3s ease;
+    }
+
+    .footer-links a:hover {
+      color: #F87171;
+      padding-left: 5px;
+    }
+
+    .social-links {
+      display: flex;
+      gap: 15px;
+    }
+
+    .social-links a {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      width: 40px;
+      height: 40px;
+      background: rgba(255, 255, 255, 0.1);
+      border-radius: 50%;
+      color: #ffffff;
+      font-size: 1.2rem;
+      transition: all 0.3s ease;
+    }
+
+    .social-links a:hover {
+      background: #F87171;
+      transform: translateY(-3px);
+      box-shadow: 0 5px 15px rgba(248, 113, 113, 0.4);
+    }
+
+    .footer-bottom {
+      border-top: 1px solid rgba(255, 255, 255, 0.2);
+      padding: 20px 0;
+      color: rgba(255, 255, 255, 0.8);
+    }
+
+    @keyframes fadeInDown {
+      from {
+        opacity: 0;
+        transform: translateY(-20px);
+      }
+
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    @keyframes float {
+
+      0%,
+      100% {
+        transform: translateY(0px);
+      }
+
+      50% {
+        transform: translateY(-10px);
+      }
+    }
+
+    /* Animation Classes */
+    .animate-on-scroll {
+      opacity: 0.3;
+      transform: translateY(15px);
+      transition: all 0.4s ease-out;
+    }
+
+    .animate-on-scroll.visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    /* Ensure sections are visible by default */
+    .section-title,
+    .contact-form-card,
+    .contact-info-cards {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    @media (max-width: 768px) {
+      .hero-section h1 {
+        font-size: 2.5rem;
+      }
+
+      .hero-section p {
+        font-size: 1.2rem;
+      }
+
+      .section-title {
+        font-size: 2rem;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <!-- Header -->
+  <header class="navbar navbar-expand-lg navbar-dark sticky-top">
+    <div class="container">
+      <a class="navbar-brand finger-paint-regular" href="index.html">AdyTechSolutions</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="services.html">Services</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="about.html">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="portfolio.html">Portfolio</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="blog.html">Blog</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="contact.html">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </header>
+
+  <!-- Main Content -->
+  <main>
+    <!-- Hero Section -->
+    <section id="hero" class="hero-section text-center">
+      <div class="container hero-content">
+        <h1 class="mb-4">Contact AdyTechSolutions</h1>
+        <p class="lead mb-5">Ready to grow with our <strong>social media marketing services</strong>? Reach out to the
+          <strong>best digital marketing agency</strong> for a free consultation.</p>
+        <a href="#contact" class="btn btn-custom btn-lg">Get in Touch</a>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact-section">
+      <div class="container">
+        <h2 class="section-title animate-on-scroll">Ready to Scale Your Business?</h2>
+        <div class="row align-items-center">
+          <p class="lead mb-5 animate-on-scroll">Partner with AdyTechSolutions, the <strong>best digital marketing
+              agency</strong>, to drive growth with our <strong>social media marketing services</strong>. Fill out the
+            form below to get started!</p>
+          <div class="col-lg-6 animate-on-scroll">
+            <div class="contact-image text-center mb-4">
+              <img src="https://images.unsplash.com/photo-1553484771-371a605b060b?w=500&h=400&fit=crop&crop=center"
+                alt="Contact Us" class="img-fluid rounded shadow-lg" style="border-radius: 20px !important;">
+            </div>
+
+            <!-- Contact Information Cards -->
+            <div class="contact-info-cards mt-4">
+              <div class="row">
+                <div class="col-md-6 mb-3">
+                  <div class="contact-card p-3 text-center"
+                    style="background: linear-gradient(145deg, #ffffff, #f8f9fa); border-radius: 15px; box-shadow: 0 5px 15px rgba(0,0,0,0.1);">
+                    <i class="fas fa-envelope fa-2x mb-2"
+                      style="background: linear-gradient(135deg, #6B21A8, #9333EA, #EC4899); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text;"></i>
+                    <h6 class="fw-bold" style="color: #6B21A8;">Email Us</h6>
+                    <p class="mb-0"><a href="mailto:contact@adytechsolutions.com"
+                        style="color: #6B21A8; text-decoration: none;">info@adytechsolutions.com</a></p>
+                  </div>
+                </div>
+                <div class="col-md-6 mb-3">
+                  <div class="contact-card p-3 text-center"
+                    style="background: linear-gradient(145deg, #ffffff, #f8f9fa); border-radius: 15px; box-shadow: 0 5px 15px rgba(0,0,0,0.1);">
+                    <i class="fas fa-phone fa-2x mb-2"
+                      style="background: linear-gradient(135deg, #6B21A8, #9333EA, #EC4899); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text;"></i>
+                    <h6 class="fw-bold" style="color: #6B21A8;">Call Us</h6>
+                    <p class="mb-0"><a href="tel:+1-800-555-1234" style="color: #6B21A8; text-decoration: none;">+91
+                        97999 96948</a></p>
+                  </div>
+                </div>
+                <div class="col-12 mb-3">
+                  <div class="contact-card p-3 text-center"
+                    style="background: linear-gradient(145deg, #ffffff, #f8f9fa); border-radius: 15px; box-shadow: 0 5px 15px rgba(0,0,0,0.1);">
+                    <i class="fas fa-map-marker-alt fa-2x mb-2"
+                      style="background: linear-gradient(135deg, #6B21A8, #9333EA, #EC4899); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text;"></i>
+                    <h6 class="fw-bold" style="color: #6B21A8;">Visit Us</h6>
+                    <p class="mb-0" style="color: #6B21A8;">123 Digital Avenue, Tech City, TC 12345</p>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Social Media Links -->
+              <div class="social-links text-center mt-4">
+                <h6 class="fw-bold mb-3" style="color: #6B21A8;">Follow Us</h6>
+                <a href="#" class="mx-2" aria-label="Facebook"><i class="fab fa-facebook fa-2x"
+                    style="background: linear-gradient(135deg, #6B21A8, #9333EA, #EC4899); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text;"></i></a>
+                <a href="#" class="mx-2" aria-label="Instagram"><i class="fab fa-instagram fa-2x"
+                    style="background: linear-gradient(135deg, #6B21A8, #9333EA, #EC4899); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text;"></i></a>
+                <a href="#" class="mx-2" aria-label="LinkedIn"><i class="fab fa-linkedin fa-2x"
+                    style="background: linear-gradient(135deg, #6B21A8, #9333EA, #EC4899); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text;"></i></a>
+                <a href="#" class="mx-2" aria-label="Twitter"><i class="fab fa-twitter fa-2x"
+                    style="background: linear-gradient(135deg, #6B21A8, #9333EA, #EC4899); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text;"></i></a>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-6">
+
+            <div class="contact-form-card animate-on-scroll">
+              <form id="contactForm" class="p-4" action="https://formsubmit.co/info@adytechsolutions.com" method="POST"
+                style="
+                    background: linear-gradient(145deg, #ffffff, #f8f9fa);
+                    border-radius: 20px;
+                    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+                  ">
+                <input name="_captcha" type="hidden" value="false" />
+                <input name="_next" type="hidden" value="https://adytechsolutions.com" />
+                <div class="row mb-4">
+                  <div class="col-md-6 mb-3">
+                    <label for="name" class="form-label fw-bold" style="color: #6B21A8;">
+                      <i class="fas fa-user me-2"
+                        style="background: linear-gradient(135deg, #6B21A8, #9333EA, #EC4899); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text;"></i>
+                      Full Name
+                    </label>
+                    <input type="text" class="form-control rounded-3" id="name" name="name" placeholder="Your Name"
+                      required style="border: 2px solid #E5E7EB; transition: all 0.3s ease;">
+                  </div>
+                  <div class="col-md-6 mb-3">
+                    <label for="email" class="form-label fw-bold" style="color: #6B21A8;">
+                      <i class="fas fa-envelope me-2"
+                        style="background: linear-gradient(135deg, #6B21A8, #9333EA, #EC4899); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text;"></i>
+                      Email Address
+                    </label>
+                    <input type="email" class="form-control rounded-3" id="email" name="email" placeholder="Your Email"
+                      required style="border: 2px solid #E5E7EB; transition: all 0.3s ease;">
+                  </div>
+                </div>
+                <div class="mb-4">
+                  <label for="company" class="form-label fw-bold" style="color: #6B21A8;">
+                    <i class="fas fa-building me-2"
+                      style="background: linear-gradient(135deg, #6B21A8, #9333EA, #EC4899); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text;"></i>
+                    Company Name
+                  </label>
+                  <input type="text" class="form-control rounded-3" id="company" name="company"
+                    placeholder="Your Company (Optional)" style="border: 2px solid #E5E7EB; transition: all 0.3s ease;">
+                </div>
+                <div class="mb-4">
+                  <label for="service" class="form-label fw-bold" style="color: #6B21A8;">
+                    <i class="fas fa-cogs me-2"
+                      style="background: linear-gradient(135deg, #6B21A8, #9333EA, #EC4899); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text;"></i>
+                    Interested Service
+                  </label>
+                  <select class="form-select rounded-3" id="service" name="service" required
+                    style="border: 2px solid #E5E7EB; transition: all 0.3s ease;">
+                    <option value="">Select a Service</option>
+                    <option value="Social Media Marketing">Social Media Marketing</option>
+                    <option value="SEO">Search Engine Optimization</option>
+                    <option value="PPC">Pay Per Click Advertising</option>
+                    <option value="Content Marketing">Content Marketing</option>
+                    <option value="Email Marketing">Email Marketing</option>
+                    <option value="Web Design">Web Design & Development</option>
+                  </select>
+                </div>
+                <div class="mb-4">
+                  <label for="message" class="form-label fw-bold" style="color: #6B21A8;">
+                    <i class="fas fa-comment me-2"
+                      style="background: linear-gradient(135deg, #6B21A8, #9333EA, #EC4899); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text;"></i>
+                    Message
+                  </label>
+                  <textarea class="form-control rounded-3" id="message" rows="5"
+                    placeholder="Tell us about your project" required
+                    style="border: 2px solid #E5E7EB; transition: all 0.3s ease;"></textarea>
+                </div>
+                <button type="submit" class="btn btn-custom btn-lg w-100">
+                  <i class="fas fa-rocket me-2"></i>
+                  Book a Strategy Call
+                </button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+
+  <!-- Enhanced Footer -->
+  <footer class="enhanced-footer">
+    <div class="container">
+      <!-- Newsletter Section -->
+      <div class="newsletter-section text-center py-5 mb-5">
+        <div class="row justify-content-center">
+          <div class="col-lg-8">
+            <h3 class="newsletter-title mb-3">Stay Updated with Digital Marketing Tips!</h3>
+            <p class="newsletter-subtitle mb-4">Get exclusive insights, industry trends, and marketing strategies
+              delivered to your inbox weekly.</p>
+            <form id="newsletterForm" class="newsletter-form">
+              <div class="input-group">
+                <input type="email" class="form-control newsletter-input" placeholder="Enter your email address"
+                  required>
+                <button class="btn btn-custom newsletter-btn" type="submit">
+                  <i class="fas fa-paper-plane me-2"></i>Subscribe Now
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+
+      <!-- Main Footer Content -->
+      <div class="row">
+        <!-- Company Info -->
+        <div class="col-lg-4 col-md-6 mb-4">
+          <h5 class="footer-heading">AdyTechSolutions</h5>
+          <p class="footer-text">Your trusted partner for digital marketing success. We help businesses grow through
+            strategic social media marketing, SEO, PPC, and comprehensive digital solutions.</p>
+          <div class="footer-contact">
+            <p><i class="fas fa-envelope me-2"></i> info@adytechsolutions.com</p>
+            <p><i class="fas fa-phone me-2"></i> +91 97999 96948</p>
+            <p><i class="fas fa-map-marker-alt me-2"></i> 115-116, Jan Path, Block D, Nirman Nagar, Brijlalpura, Jaipur,
+              Rajasthan 302019</p>
+
+          </div>
+        </div>
+
+        <!-- Services -->
+        <div class="col-lg-2 col-md-6 mb-4">
+          <h5 class="footer-heading">Services</h5>
+          <ul class="footer-links">
+            <li><a href="#services">Social Media Marketing</a></li>
+            <li><a href="#services">SEO Optimization</a></li>
+            <li><a href="#services">PPC Advertising</a></li>
+            <li><a href="#services">Content Marketing</a></li>
+            <li><a href="#services">Email Marketing</a></li>
+            <li><a href="#services">Web Development</a></li>
+          </ul>
+        </div>
+
+        <!-- Company -->
+        <div class="col-lg-2 col-md-6 mb-4">
+          <h5 class="footer-heading">Company</h5>
+          <ul class="footer-links">
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="portfolio.html">Portfolio</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="#testimonials">Testimonials</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="#">Careers</a></li>
+          </ul>
+        </div>
+
+        <!-- Resources -->
+        <div class="col-lg-2 col-md-6 mb-4">
+          <h5 class="footer-heading">Resources</h5>
+          <ul class="footer-links">
+            <li><a href="#faq">FAQ</a></li>
+            <li><a href="#">Case Studies</a></li>
+            <li><a href="#">Free Tools</a></li>
+            <li><a href="#">Marketing Guide</a></li>
+            <li><a href="#">Industry Reports</a></li>
+            <li><a href="#">Webinars</a></li>
+          </ul>
+        </div>
+
+        <!-- Social & Legal -->
+        <div class="col-lg-2 col-md-6 mb-4">
+          <h5 class="footer-heading">Connect</h5>
+          <div class="social-links mb-3">
+            <a href="#" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+            <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+            <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+            <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+            <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+          </div>
+          <ul class="footer-links">
+            <li><a href="#">Privacy Policy</a></li>
+            <li><a href="#">Terms of Service</a></li>
+            <li><a href="#">Cookie Policy</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Bottom Footer -->
+      <div class="footer-bottom text-center pt-4 mt-4">
+        <p class="mb-0">© 2024 AdyTechSolutions. All rights reserved. | Designed with ❤️ for your digital success.</p>
+      </div>
+    </div>
+  </footer>
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/js/all.min.js"></script>
+  <script src="script.js"></script>
+  <script>
+    // Ensure all sections are immediately visible
+    document.addEventListener('DOMContentLoaded', function () {
+      document.querySelectorAll('section, .section-title, .contact-form-card, .contact-info-cards').forEach(el => {
+        el.style.opacity = '1';
+        el.style.transform = 'translateY(0)';
+      });
+    });
+
+
+
+    // Smooth scrolling for anchor links
+    document.querySelectorAll('a.nav-link, a.btn-custom').forEach(anchor => {
+      anchor.addEventListener('click', function (e) {
+        if (this.getAttribute('href').startsWith('#')) {
+          e.preventDefault();
+          const targetId = this.getAttribute('href');
+          const targetElement = document.querySelector(targetId);
+          if (targetElement) {
+            targetElement.scrollIntoView({
+              behavior: 'smooth',
+              block: 'start'
+            });
+          }
+        }
+      });
+    });
+
+    // Navbar scroll effect
+    window.addEventListener('scroll', function () {
+      const navbar = document.querySelector('header.navbar');
+      if (window.scrollY > 50) {
+        navbar.classList.add('scrolled');
+      } else {
+        navbar.classList.remove('scrolled');
+      }
+    });
+
+    // Intersection Observer for animations
+    const observerOptions = {
+      threshold: 0.05,
+      rootMargin: '0px 0px 50px 0px'
+    };
+
+    const observer = new IntersectionObserver(function (entries) {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+        }
+      });
+    }, observerOptions);
+
+    // Observe elements with animate-on-scroll class
+    document.querySelectorAll('.animate-on-scroll').forEach(el => {
+      observer.observe(el);
+    });
+
+    // Add hover effects to contact cards
+    document.querySelectorAll('.contact-card').forEach(card => {
+      card.addEventListener('mouseenter', function () {
+        this.style.transform = 'translateY(-5px)';
+        this.style.boxShadow = '0 10px 25px rgba(0,0,0,0.15)';
+      });
+
+      card.addEventListener('mouseleave', function () {
+        this.style.transform = 'translateY(0)';
+        this.style.boxShadow = '0 5px 15px rgba(0,0,0,0.1)';
+      });
+    });
+
+    // Add focus effects to form inputs
+    document.querySelectorAll('.form-control, .form-select').forEach(input => {
+      input.addEventListener('focus', function () {
+        this.style.borderColor = '#6B21A8';
+        this.style.boxShadow = '0 0 0 0.2rem rgba(107, 33, 168, 0.25)';
+      });
+
+      input.addEventListener('blur', function () {
+        this.style.borderColor = '#E5E7EB';
+        this.style.boxShadow = 'none';
+      });
+    });
+
+    // Parallax effect for hero section
+    window.addEventListener('scroll', function () {
+      const scrolled = window.pageYOffset;
+      const parallax = document.querySelector('.hero-section::before');
+      if (parallax) {
+        const speed = scrolled * 0.5;
+        parallax.style.transform = `translateY(${speed}px)`;
+      }
+    });
+
+  </script>
+</body>
+
+</html>

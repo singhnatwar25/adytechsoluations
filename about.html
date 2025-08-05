@@ -1,0 +1,1018 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Learn about AdyTechSolutions, the best digital marketing agency specializing in social media marketing, SEO, and PPC for businesses. Book a free consultation!">
+  <meta name="keywords" content="best digital marketing agency, social media marketing services, digital marketing for small businesses, affordable SMM agency, top marketing agency near me">
+  <meta name="author" content="AdyTechSolutions">
+  <meta property="og:title" content="About Us | AdyTechSolutions Digital Marketing">
+  <meta property="og:description" content="Discover AdyTechSolutions' mission to grow your business with expert digital marketing and social media strategies. Book a free consultation today!">
+  <meta property="og:image" content="https://via.placeholder.com/1200x630?text=AdyTechSolutions+About">
+  <meta property="og:url" content="https://www.adytechsolutions.com/about">
+  <title>About Us | AdyTechSolutions</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+  <!-- font  -->
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Finger+Paint&display=swap" rel="stylesheet">
+  
+  <style>
+    body {
+      font-family: 'Inter', sans-serif;
+      background-color: #f8f9fa;
+      scroll-behavior: smooth;
+      line-height: 1.7;
+    }
+        .finger-paint-regular {
+        font-family: "Finger Paint", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+      }
+    
+    /* Animation Keyframes */
+    @keyframes fadeInUp {
+      from {
+        opacity: 0;
+        transform: translateY(30px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+    
+    @keyframes fadeInLeft {
+      from {
+        opacity: 0;
+        transform: translateX(-30px);
+      }
+      to {
+        opacity: 1;
+        transform: translateX(0);
+      }
+    }
+    
+    @keyframes fadeInRight {
+      from {
+        opacity: 0;
+        transform: translateX(30px);
+      }
+      to {
+        opacity: 1;
+        transform: translateX(0);
+      }
+    }
+    
+    @keyframes fadeInDown {
+      from {
+        opacity: 0;
+        transform: translateY(-30px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+    
+    @keyframes pulse {
+      0% {
+        transform: scale(1);
+      }
+      50% {
+        transform: scale(1.05);
+      }
+      100% {
+        transform: scale(1);
+      }
+    }
+    
+    @keyframes float {
+      0%, 100% {
+        transform: translateY(0px);
+      }
+      50% {
+        transform: translateY(-10px);
+      }
+    }
+    
+    /* Animation Classes */
+    .animate-fade-in {
+      animation: fadeInUp 0.8s ease-out;
+    }
+    
+    .animate-fade-left {
+      animation: fadeInLeft 0.8s ease-out;
+    }
+    
+    .animate-fade-right {
+      animation: fadeInRight 0.8s ease-out;
+    }
+    
+    .animate-on-scroll {
+      opacity: 0.3;
+      transform: translateY(15px);
+      transition: all 0.4s ease-out;
+    }
+    
+    .animate-on-scroll.visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+    
+    /* Ensure sections are visible by default */
+    .section-title, .about-card, .value-card {
+      opacity: 1;
+      transform: translateY(0);
+    }
+    
+    header.navbar {
+      background: linear-gradient(135deg, #6B21A8, #9333EA, #EC4899);
+      box-shadow: 0 4px 20px rgba(107, 33, 168, 0.3);
+      padding: 1rem 0;
+      backdrop-filter: blur(10px);
+      transition: all 0.3s ease;
+    }
+    
+    header.navbar.scrolled {
+      background: rgba(107, 33, 168, 0.95);
+      backdrop-filter: blur(20px);
+      box-shadow: 0 8px 32px rgba(107, 33, 168, 0.4);
+    }
+    
+    .navbar-brand {
+      font-weight: 700;
+      font-size: 1.5rem;
+      color: #ffffff !important;
+      transition: all 0.3s ease;
+    }
+    
+    .navbar-brand:hover {
+      transform: scale(1.05);
+      color: #F87171 !important;
+    }
+    
+    .nav-link {
+      color: #ffffff !important;
+      font-weight: 600;
+      position: relative;
+      transition: all 0.3s ease;
+      margin: 0 0.5rem;
+    }
+    
+    .nav-link::after {
+      content: '';
+      position: absolute;
+      width: 0;
+      height: 2px;
+      bottom: -5px;
+      left: 50%;
+      background: linear-gradient(90deg, #F87171, #EC4899);
+      transition: all 0.3s ease;
+      transform: translateX(-50%);
+    }
+    
+    .nav-link:hover::after {
+      width: 100%;
+    }
+    
+    .hero-section {
+      background: linear-gradient(135deg, #6B21A8 0%, #9333EA 50%, #EC4899 100%);
+      color: white;
+      padding: 150px 0;
+      position: relative;
+      overflow: hidden;
+      border-bottom: 5px solid #F87171;
+      min-height: 80vh;
+      display: flex;
+      align-items: center;
+    }
+    
+    .hero-section::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background: url('https://images.unsplash.com/photo-1552664730-d307ca884978?w=1920&h=800&fit=crop&crop=center') no-repeat center center/cover;
+      opacity: 0.2;
+      z-index: 0;
+    }
+    
+    .hero-section::after {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 1000"><defs><radialGradient id="a" cx="50%" cy="50%" r="50%"><stop offset="0%" stop-color="%23ffffff" stop-opacity="0.1"/><stop offset="100%" stop-color="%23ffffff" stop-opacity="0"/></radialGradient></defs><circle cx="200" cy="200" r="100" fill="url(%23a)"/><circle cx="800" cy="300" r="150" fill="url(%23a)"/><circle cx="400" cy="700" r="120" fill="url(%23a)"/></svg>');
+      animation: float 6s ease-in-out infinite;
+      opacity: 0.15;
+      z-index: 0;
+    }
+    
+    .hero-content {
+      position: relative;
+      z-index: 1;
+    }
+    .hero-section h1 {
+      font-size: 3.5rem;
+      font-weight: 700;
+      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+      animation: fadeInDown 1s ease-out;
+      margin-bottom: 1.5rem;
+    }
+    
+    .hero-section p {
+      font-size: 1.3rem;
+      margin-bottom: 2rem;
+      animation: fadeInUp 1.2s ease-out;
+    }
+    
+    .btn-custom {
+      background: linear-gradient(135deg, #F87171, #EC4899);
+      color: #ffffff;
+      font-weight: 600;
+      padding: 1rem 2.5rem;
+      border-radius: 50px;
+      border: none;
+      transition: all 0.3s ease;
+      position: relative;
+      overflow: hidden;
+      animation: fadeInUp 1.4s ease-out;
+    }
+    
+    .btn-custom::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: -100%;
+      width: 100%;
+      height: 100%;
+      background: linear-gradient(90deg, transparent, rgba(255,255,255,0.2), transparent);
+      transition: left 0.5s;
+    }
+    
+    .btn-custom:hover::before {
+      left: 100%;
+    }
+    
+    .btn-custom:hover {
+      transform: translateY(-3px) scale(1.05);
+      box-shadow: 0 15px 35px rgba(248, 113, 113, 0.4);
+      background: linear-gradient(135deg, #EC4899, #F87171);
+    }
+    .section-title {
+      font-size: 2.8rem;
+      font-weight: 700;
+      background: linear-gradient(135deg, #6B21A8, #9333EA, #EC4899);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+      margin-bottom: 3rem;
+      position: relative;
+      text-align: center;
+      animation: fadeInUp 0.8s ease-out;
+    }
+    
+    .section-title::after {
+      content: '';
+      width: 80px;
+      height: 4px;
+      background: linear-gradient(90deg, #F87171, #EC4899);
+      position: absolute;
+      bottom: -15px;
+      left: 50%;
+      transform: translateX(-50%);
+      border-radius: 2px;
+      animation: fadeInUp 1s ease-out;
+    }
+    
+    .team-card, .value-card, .faq-card {
+      border: none;
+      border-radius: 20px;
+      background: #ffffff;
+      box-shadow: 0 10px 30px rgba(107, 33, 168, 0.1);
+      transition: all 0.4s ease;
+      position: relative;
+      overflow: hidden;
+      height: 100%;
+    }
+    
+    .team-card::before, .value-card::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      height: 4px;
+      background: linear-gradient(90deg, #6B21A8, #9333EA, #EC4899);
+      transform: scaleX(0);
+      transition: transform 0.3s ease;
+    }
+    
+    .team-card:hover::before, .value-card:hover::before {
+      transform: scaleX(1);
+    }
+    
+    .team-card:hover, .value-card:hover, .faq-card:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 20px 50px rgba(107, 33, 168, 0.2);
+    }
+    .team-card img {
+      width: 120px;
+      height: 120px;
+      border-radius: 50%;
+      margin-bottom: 1rem;
+      object-fit: cover;
+      border: 4px solid transparent;
+      background: linear-gradient(white, white) padding-box, linear-gradient(135deg, #6B21A8, #EC4899) border-box;
+      transition: all 0.3s ease;
+    }
+    
+    .team-card:hover img {
+      transform: scale(1.1);
+      box-shadow: 0 10px 25px rgba(107, 33, 168, 0.3);
+    }
+    
+    .team-card h3, .value-card h3 {
+      color: #6B21A8;
+      font-weight: 700;
+      margin-bottom: 1rem;
+    }
+    
+    .mission-section, .team-section, .values-section, .faq-section, .cta-section {
+      padding: 100px 0;
+      position: relative;
+    }
+    
+    .mission-section {
+      background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+    }
+    
+    .team-section {
+      background: #ffffff;
+    }
+    
+    .values-section {
+      background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+    }
+    
+    .faq-section {
+      background: #ffffff;
+    }
+    
+    .cta-section {
+      background: linear-gradient(135deg, #6B21A8 0%, #9333EA 50%, #EC4899 100%);
+      color: white;
+    }
+    
+    .faq-card {
+      margin-bottom: 1rem;
+      border: 1px solid rgba(107, 33, 168, 0.1);
+    }
+    
+    .faq-card .card-header {
+      background: linear-gradient(135deg, #f8f9fa, #ffffff);
+      border: none;
+      font-weight: 600;
+      border-radius: 20px 20px 0 0;
+    }
+    
+    .faq-card .btn-link {
+      color: #6B21A8;
+      text-decoration: none;
+      font-weight: 600;
+      width: 100%;
+      text-align: left;
+    }
+    
+    .faq-card .btn-link:hover {
+      color: #EC4899;
+    }
+    
+
+    
+    /* Enhanced Footer Styles */
+    .enhanced-footer {
+      background: linear-gradient(135deg, #6B21A8 0%, #9333EA 50%, #EC4899 100%);
+      color: #ffffff;
+      padding: 60px 0 0;
+      position: relative;
+    }
+    
+    .enhanced-footer::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      height: 5px;
+      background: linear-gradient(90deg, #F87171, #EC4899, #9333EA, #6B21A8);
+    }
+    
+    .newsletter-section {
+      background: rgba(255, 255, 255, 0.1);
+      border-radius: 20px;
+      backdrop-filter: blur(10px);
+      margin-bottom: 3rem;
+    }
+    
+    .newsletter-title {
+      font-size: 2rem;
+      font-weight: 700;
+      color: #ffffff;
+      margin-bottom: 1rem;
+    }
+    
+    .newsletter-subtitle {
+      font-size: 1.1rem;
+      color: rgba(255, 255, 255, 0.9);
+      margin-bottom: 2rem;
+    }
+    
+    .newsletter-form .input-group {
+      max-width: 500px;
+      margin: 0 auto;
+    }
+    
+    .newsletter-input {
+      border: none;
+      border-radius: 50px 0 0 50px;
+      padding: 15px 20px;
+      font-size: 1rem;
+      background: rgba(255, 255, 255, 0.95);
+    }
+    
+    .newsletter-btn {
+      border-radius: 0 50px 50px 0;
+      padding: 15px 25px;
+      border: none;
+    }
+    
+    .footer-heading {
+      font-size: 1.3rem;
+      font-weight: 700;
+      color: #ffffff;
+      margin-bottom: 1.5rem;
+      position: relative;
+    }
+    
+    .footer-heading::after {
+      content: '';
+      position: absolute;
+      bottom: -5px;
+      left: 0;
+      width: 30px;
+      height: 2px;
+      background: #F87171;
+    }
+    
+    .footer-text {
+      color: rgba(255, 255, 255, 0.9);
+      line-height: 1.6;
+      margin-bottom: 1.5rem;
+    }
+    
+    .footer-contact p {
+      color: rgba(255, 255, 255, 0.9);
+      margin-bottom: 0.5rem;
+      font-size: 0.95rem;
+    }
+    
+    .footer-contact i {
+      color: #F87171;
+      width: 20px;
+    }
+    
+    .footer-links {
+      list-style: none;
+      padding: 0;
+    }
+    
+    .footer-links li {
+      margin-bottom: 0.5rem;
+    }
+    
+    .footer-links a {
+      color: rgba(255, 255, 255, 0.8);
+      text-decoration: none;
+      font-size: 0.95rem;
+      transition: all 0.3s ease;
+    }
+    
+    .footer-links a:hover {
+      color: #F87171;
+      padding-left: 5px;
+    }
+    
+    .social-links {
+      display: flex;
+      gap: 15px;
+    }
+    
+    .social-links a {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      width: 40px;
+      height: 40px;
+      background: rgba(255, 255, 255, 0.1);
+      border-radius: 50%;
+      color: #ffffff;
+      font-size: 1.2rem;
+      transition: all 0.3s ease;
+    }
+    
+    .social-links a:hover {
+      background: #F87171;
+      transform: translateY(-3px);
+      box-shadow: 0 5px 15px rgba(248, 113, 113, 0.4);
+    }
+    
+    .footer-bottom {
+      border-top: 1px solid rgba(255, 255, 255, 0.2);
+      padding: 20px 0;
+      color: rgba(255, 255, 255, 0.8);
+    }
+    
+    @keyframes fadeInDown {
+      from { opacity: 0; transform: translateY(-20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+    @media (max-width: 768px) {
+      .hero-section h1 { font-size: 2.5rem; }
+      .hero-section p { font-size: 1.2rem; }
+      .section-title { font-size: 2rem; }
+    }
+  </style>
+</head>
+<body>
+  <!-- Header -->
+  <header class="navbar navbar-expand-lg navbar-dark sticky-top">
+    <div class="container">
+      <a class="navbar-brand finger-paint-regular" href="index.html">AdyTechSolutions</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html#home">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="services.html">Services</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="about.html">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="portfolio.html">Portfolio</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="blog.html">Blog</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="contact.html">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </header>
+
+  <!-- Main Content -->
+  <main>
+    <!-- Hero Section -->
+    <section id="hero" class="hero-section text-center">
+      <div class="container hero-content">
+        <h1 class="mb-4">About AdyTechSolutions</h1>
+        <p class="lead mb-5">Discover how we empower businesses with expert <strong>social media marketing services</strong> and digital strategies as your trusted <strong>best digital marketing agency</strong>.</p>
+        <a href="#contact" class="btn btn-custom btn-lg">Get a Free Consultation</a>
+      </div>
+    </section>
+
+    <!-- Mission Section -->
+    <section id="mission" class="mission-section">
+      <div class="container">
+        <h2 class="section-title">Our Mission</h2>
+        <p>At AdyTechSolutions, our mission is to transform businesses through innovative and <strong>data-driven digital campaigns</strong>. We believe in the power of digital marketing to connect brands with their audiences, drive measurable results, and foster long-term growth. Specializing in <strong>social media marketing services</strong>, we help startups, small businesses, and e-commerce brands achieve their goals with tailored strategies. Our commitment is to deliver <strong>affordable social media marketing</strong> that maximizes ROI while maintaining transparency and excellence.</p>
+        <p>Founded in Jaipur in 2018, we’ve grown into a <strong>top marketing agency near me</strong>, serving clients across industries like e-commerce, healthcare, and SaaS. Our passion for innovation drives us to stay ahead of digital trends, ensuring your business thrives in a competitive landscape.</p>
+      </div>
+    </section>
+
+    <!-- Team Section -->
+    <section id="team" class="team-section">
+      <div class="container">
+        <h2 class="section-title animate-on-scroll">Meet Our Expert Team</h2>
+        <p class="text-center mb-5 animate-on-scroll">Our team of certified professionals brings years of experience in digital marketing, specializing in <strong>Facebook & Instagram ad experts</strong>, SEO, and PPC. Meet the minds behind your success:</p>
+        <div class="row">
+          <div class="col-md-4 mb-4">
+            <article class="card team-card h-100 text-center animate-on-scroll">
+              <div class="card-body p-4">
+                <div class="team-image-wrapper mb-3">
+                  <img src="Images/aditya.jpg" alt="Emma Johnson - Chief Marketing Officer at AdyTechSolutions">
+                </div>
+                <h3 class="card-title">Aditya Pandey</h3>
+                <p class="card-text text-muted mb-2">Founder</p>
+                <div class="team-social mb-3">
+                  <i class="fab fa-linkedin" style="color: #6B21A8; margin: 0 0.5rem;"></i>
+                  <i class="fab fa-twitter" style="color: #6B21A8; margin: 0 0.5rem;"></i>
+                </div>
+                <p class="small">Aditya Pandey our <strong>social media strategy for businesses</strong>, with over 10 years of experience in Meta and Google Ads. She's certified in Facebook Blueprint and Google Ads.</p>
+              </div>
+            </article>
+          </div>
+          <div class="col-md-4 mb-4">
+            <article class="card team-card h-100 text-center animate-on-scroll">
+              <div class="card-body p-4">
+                <div class="team-image-wrapper mb-3">
+                  <img src="Images/natwar.jpg" alt="Michael Chen - SEO Director at AdyTechSolutions">
+                </div>
+                <h3 class="card-title">Natwar</h3>
+                <p class="card-text text-muted mb-2">Developing Director</p>
+                <div class="team-social mb-3">
+                  <i class="fab fa-linkedin" style="color: #6B21A8; margin: 0 0.5rem;"></i>
+                  <i class="fab fa-github" style="color: #6B21A8; margin: 0 0.5rem;"></i>
+                </div>
+                <p class="small">Natwar drives organic growth with expertise in keyword research, on-page SEO, and link building. He holds certifications from Google and SEMrush.</p>
+              </div>
+            </article>
+          </div>
+          <div class="col-md-4 mb-4">
+            <article class="card team-card h-100 text-center animate-on-scroll">
+              <div class="card-body p-4">
+                <div class="team-image-wrapper mb-3">
+                  <img src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=150&h=150&fit=crop&crop=face" alt="Laura Smith - PPC Specialist at AdyTechSolutions">
+                </div>
+                <h3 class="card-title">Ankit Agarwal</h3>
+                <p class="card-text text-muted mb-2">PPC Specialist</p>
+                <div class="team-social mb-3">
+                  <i class="fab fa-linkedin" style="color: #6B21A8; margin: 0 0.5rem;"></i>
+                  <i class="fab fa-twitter" style="color: #6B21A8; margin: 0 0.5rem;"></i>
+                </div>
+                <p class="small">Ankit crafts high-ROI ad campaigns, leveraging Google Ads and Bing Ads to drive targeted traffic. She's a Google Ads certified professional.</p>
+              </div>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Values Section -->
+    <section id="values" class="values-section">
+      <div class="container">
+        <h2 class="section-title animate-on-scroll">Our Core Values</h2>
+        <p class="text-center mb-5 animate-on-scroll">We're guided by principles that ensure your success. Our values shape every campaign we create:</p>
+        <div class="row">
+          <div class="col-md-4 mb-4">
+            <article class="card value-card h-100 animate-on-scroll">
+              <div class="card-body text-center p-4">
+                <div class="value-icon mb-4">
+                  <i class="fas fa-eye fa-3x" style="background: linear-gradient(135deg, #6B21A8, #9333EA, #EC4899); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text;"></i>
+                </div>
+                <h3 class="card-title">Transparency</h3>
+                <p class="card-text">We provide clear, detailed reporting so you always know how your <strong>SMM packages for startups</strong> are performing. Full visibility into your campaigns.</p>
+              </div>
+            </article>
+          </div>
+          <div class="col-md-4 mb-4">
+            <article class="card value-card h-100 animate-on-scroll">
+              <div class="card-body text-center p-4">
+                <div class="value-icon mb-4">
+                  <i class="fas fa-lightbulb fa-3x" style="background: linear-gradient(135deg, #6B21A8, #9333EA, #EC4899); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text;"></i>
+                </div>
+                <h3 class="card-title">Innovation</h3>
+                <p class="card-text">We stay ahead of trends to deliver cutting-edge <strong>digital marketing for small businesses</strong> with the latest tools and strategies.</p>
+              </div>
+            </article>
+          </div>
+          <div class="col-md-4 mb-4">
+            <article class="card value-card h-100 animate-on-scroll">
+              <div class="card-body text-center p-4">
+                <div class="value-icon mb-4">
+                  <i class="fas fa-trophy fa-3x" style="background: linear-gradient(135deg, #6B21A8, #9333EA, #EC4899); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text;"></i>
+                </div>
+                <h3 class="card-title">Client Success</h3>
+                <p class="card-text">Your growth is our priority. We tailor strategies to meet your unique goals and deliver measurable results.</p>
+              </div>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section id="faq" class="faq-section">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-6 animate-on-scroll">
+            <div class="faq-image text-center mb-4">
+              <img src="https://images.unsplash.com/photo-1559526324-4b87b5e36e44?w=500&h=400&fit=crop&crop=center" alt="FAQ Support" class="img-fluid rounded shadow-lg" style="border-radius: 20px !important;">
+            </div>
+          </div>
+          <div class="col-lg-6">
+            <h2 class="section-title animate-on-scroll">Frequently Asked Questions</h2>
+            <div class="accordion" id="faqAccordion">
+              <div class="card faq-card mb-3 animate-on-scroll">
+                <div class="card-header" id="faq1">
+                  <h3 class="mb-0">
+                    <button class="btn btn-link text-decoration-none" type="button" data-bs-toggle="collapse" data-bs-target="#collapse1" aria-expanded="true" aria-controls="collapse1">
+                      <i class="fas fa-question-circle me-2" style="background: linear-gradient(135deg, #6B21A8, #9333EA, #EC4899); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text;"></i>
+                      What is digital marketing?
+                    </button>
+                  </h3>
+                </div>
+                <div id="collapse1" class="collapse show" aria-labelledby="faq1" data-bs-parent="#faqAccordion">
+                  <div class="card-body">
+                    Digital marketing involves promoting your brand online through channels like social media, SEO, PPC, and email to drive traffic, leads, and sales.
+                  </div>
+                </div>
+              </div>
+              <div class="card faq-card mb-3 animate-on-scroll">
+                <div class="card-header" id="faq2">
+                  <h3 class="mb-0">
+                    <button class="btn btn-link text-decoration-none collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse2" aria-expanded="false" aria-controls="collapse2">
+                      <i class="fas fa-thumbs-up me-2" style="background: linear-gradient(135deg, #6B21A8, #9333EA, #EC4899); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text;"></i>
+                      Why choose social media marketing?
+                    </button>
+                  </h3>
+                </div>
+                <div id="collapse2" class="collapse" aria-labelledby="faq2" data-bs-parent="#faqAccordion">
+                  <div class="card-body">
+                    Social media marketing connects you with billions of users, boosting brand awareness and engagement through platforms like Instagram, Facebook, and LinkedIn.
+                  </div>
+                </div>
+              </div>
+              <div class="card faq-card mb-3 animate-on-scroll">
+                <div class="card-header" id="faq3">
+                  <h3 class="mb-0">
+                    <button class="btn btn-link text-decoration-none collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse3" aria-expanded="false" aria-controls="collapse3">
+                      <i class="fas fa-dollar-sign me-2" style="background: linear-gradient(135deg, #6B21A8, #9333EA, #EC4899); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text;"></i>
+                      How much do your services cost?
+                    </button>
+                  </h3>
+                </div>
+                <div id="collapse3" class="collapse" aria-labelledby="faq3" data-bs-parent="#faqAccordion">
+                  <div class="card-body">
+                    Our <strong>SMM packages for startups</strong> and businesses are customized. Contact us for a free consultation to discuss pricing.
+                  </div>
+                </div>
+              </div>
+              <div class="card faq-card mb-3 animate-on-scroll">
+                <div class="card-header" id="faq4">
+                  <h3 class="mb-0">
+                    <button class="btn btn-link text-decoration-none collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse4" aria-expanded="false" aria-controls="collapse4">
+                      <i class="fas fa-clock me-2" style="background: linear-gradient(135deg, #6B21A8, #9333EA, #EC4899); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text;"></i>
+                      How long does it take to see results?
+                    </button>
+                  </h3>
+                </div>
+                <div id="collapse4" class="collapse" aria-labelledby="faq4" data-bs-parent="#faqAccordion">
+                  <div class="card-body">
+                    Results vary, but most clients see engagement within 1–3 months and significant ROI within 3–6 months.
+                  </div>
+                </div>
+              </div>
+              <div class="card faq-card mb-3 animate-on-scroll">
+                <div class="card-header" id="faq5">
+                  <h3 class="mb-0">
+                    <button class="btn btn-link text-decoration-none collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse5" aria-expanded="false" aria-controls="collapse5">
+                      <i class="fas fa-cogs me-2" style="background: linear-gradient(135deg, #6B21A8, #9333EA, #EC4899); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text;"></i>
+                      Do you offer customized plans?
+                    </button>
+                  </h3>
+                </div>
+                <div id="collapse5" class="collapse" aria-labelledby="faq5" data-bs-parent="#faqAccordion">
+                  <div class="card-body">
+                    Yes, we offer tailored <strong>affordable social media marketing</strong> plans to suit your budget and goals. Let's discuss your needs!
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  
+  </main>
+
+ <!-- Enhanced Footer -->
+ <footer class="enhanced-footer">
+  <div class="container">
+    <!-- Newsletter Section -->
+    <div class="newsletter-section text-center py-5 mb-5">
+      <div class="row justify-content-center">
+        <div class="col-lg-8">
+          <h3 class="newsletter-title mb-3">Stay Updated with Digital Marketing Tips!</h3>
+          <p class="newsletter-subtitle mb-4">Get exclusive insights, industry trends, and marketing strategies delivered to your inbox weekly.</p>
+          <form id="newsletterForm" class="newsletter-form">
+            <div class="input-group">
+              <input type="email" class="form-control newsletter-input" placeholder="Enter your email address" required>
+              <button class="btn btn-custom newsletter-btn" type="submit">
+                <i class="fas fa-paper-plane me-2"></i>Subscribe Now
+              </button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+    
+    <!-- Main Footer Content -->
+    <div class="row">
+      <!-- Company Info -->
+      <div class="col-lg-4 col-md-6 mb-4">
+        <h5 class="footer-heading">AdyTechSolutions</h5>
+        <p class="footer-text">Your trusted partner for digital marketing success. We help businesses grow through strategic social media marketing, SEO, PPC, and comprehensive digital solutions.</p>
+        <div class="footer-contact">
+          <p><i class="fas fa-envelope me-2"></i> info@adytechsolutions.com</p>
+          <p><i class="fas fa-phone me-2"></i> +91 97999 96948</p>
+            <p><i class="fas fa-map-marker-alt me-2"></i> 115-116, Jan Path, Block D, Nirman Nagar, Brijlalpura, Jaipur, Rajasthan 302019</p>
+
+        </div>
+      </div>
+      
+      <!-- Services -->
+      <div class="col-lg-2 col-md-6 mb-4">
+        <h5 class="footer-heading">Services</h5>
+        <ul class="footer-links">
+          <li><a href="#services">Social Media Marketing</a></li>
+          <li><a href="#services">SEO Optimization</a></li>
+          <li><a href="#services">PPC Advertising</a></li>
+          <li><a href="#services">Content Marketing</a></li>
+          <li><a href="#services">Email Marketing</a></li>
+          <li><a href="#services">Web Development</a></li>
+        </ul>
+      </div>
+      
+      <!-- Company -->
+      <div class="col-lg-2 col-md-6 mb-4">
+        <h5 class="footer-heading">Company</h5>
+        <ul class="footer-links">
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="portfolio.html">Portfolio</a></li>
+          <li><a href="blog.html">Blog</a></li>
+          <li><a href="#testimonials">Testimonials</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="#">Careers</a></li>
+        </ul>
+      </div>
+      
+      <!-- Resources -->
+      <div class="col-lg-2 col-md-6 mb-4">
+        <h5 class="footer-heading">Resources</h5>
+        <ul class="footer-links">
+          <li><a href="#faq">FAQ</a></li>
+          <li><a href="#">Case Studies</a></li>
+          <li><a href="#">Free Tools</a></li>
+          <li><a href="#">Marketing Guide</a></li>
+          <li><a href="#">Industry Reports</a></li>
+          <li><a href="#">Webinars</a></li>
+        </ul>
+      </div>
+      
+      <!-- Social & Legal -->
+      <div class="col-lg-2 col-md-6 mb-4">
+        <h5 class="footer-heading">Connect</h5>
+        <div class="social-links mb-3">
+          <a href="#" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+          <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+          <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+          <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+          <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+        </div>
+        <ul class="footer-links">
+          <li><a href="#">Privacy Policy</a></li>
+          <li><a href="#">Terms of Service</a></li>
+          <li><a href="#">Cookie Policy</a></li>
+        </ul>
+      </div>
+    </div>
+    
+    <!-- Bottom Footer -->
+    <div class="footer-bottom text-center pt-4 mt-4">
+      <p class="mb-0">© 2024 AdyTechSolutions. All rights reserved. | Designed with ❤️ for your digital success.</p>
+    </div>
+  </div>
+</footer>
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/js/all.min.js"></script>
+  <script>
+    // Ensure all sections are immediately visible
+    document.addEventListener('DOMContentLoaded', function() {
+      document.querySelectorAll('section, .section-title, .team-card, .value-card, .faq-card').forEach(el => {
+        el.style.opacity = '1';
+        el.style.transform = 'translateY(0)';
+      });
+    });
+
+    // Newsletter form submission
+    document.getElementById('newsletterForm').addEventListener('submit', function(event) {
+      event.preventDefault();
+      const email = this.querySelector('input[type="email"]').value;
+      if (email) {
+        alert('🎉 Thank you for subscribing! You\'ll receive our latest digital marketing insights.');
+        this.reset();
+      }
+    });
+
+    // Smooth scrolling for anchor links
+    document.querySelectorAll('a.nav-link, a.btn-custom').forEach(anchor => {
+      anchor.addEventListener('click', function(e) {
+        if (this.getAttribute('href').startsWith('#')) {
+          e.preventDefault();
+          const targetId = this.getAttribute('href');
+          const targetElement = document.querySelector(targetId);
+          if (targetElement) {
+            targetElement.scrollIntoView({ 
+              behavior: 'smooth',
+              block: 'start'
+            });
+          }
+        }
+      });
+    });
+
+    // Navbar scroll effect
+    window.addEventListener('scroll', function() {
+      const navbar = document.querySelector('header.navbar');
+      if (window.scrollY > 50) {
+        navbar.classList.add('scrolled');
+      } else {
+        navbar.classList.remove('scrolled');
+      }
+    });
+
+    // Intersection Observer for animations
+    const observerOptions = {
+      threshold: 0.05,
+      rootMargin: '0px 0px 50px 0px'
+    };
+
+    const observer = new IntersectionObserver(function(entries) {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+        }
+      });
+    }, observerOptions);
+
+    // Observe elements with animate-on-scroll class
+    document.querySelectorAll('.animate-on-scroll').forEach(el => {
+      observer.observe(el);
+    });
+
+    // Add hover effects to team and value cards
+    document.querySelectorAll('.team-card, .value-card').forEach(card => {
+      card.addEventListener('mouseenter', function() {
+        this.style.transform = 'translateY(-10px) scale(1.02)';
+      });
+      
+      card.addEventListener('mouseleave', function() {
+        this.style.transform = 'translateY(0) scale(1)';
+      });
+    });
+
+    // Add pulse animation to social icons
+    document.querySelectorAll('.social-links a, .team-social i').forEach(icon => {
+      icon.addEventListener('mouseenter', function() {
+        this.style.animation = 'pulse 0.6s ease-in-out';
+      });
+      
+      icon.addEventListener('mouseleave', function() {
+        this.style.animation = 'none';
+      });
+    });
+
+    // Parallax effect for hero section
+    window.addEventListener('scroll', function() {
+      const scrolled = window.pageYOffset;
+      const parallax = document.querySelector('.hero-section::before');
+      if (parallax) {
+        const speed = scrolled * 0.5;
+        parallax.style.transform = `translateY(${speed}px)`;
+      }
+    });
+
+    // Enhanced button hover effects
+    document.querySelectorAll('.btn-custom').forEach(btn => {
+      btn.addEventListener('mouseenter', function() {
+        this.style.transform = 'translateY(-3px) scale(1.05)';
+        this.style.boxShadow = '0 15px 35px rgba(248, 113, 113, 0.4)';
+      });
+      
+      btn.addEventListener('mouseleave', function() {
+        this.style.transform = 'translateY(0) scale(1)';
+        this.style.boxShadow = '0 8px 25px rgba(248, 113, 113, 0.2)';
+      });
+    });
+
+  </script>
+</body>
+</html>

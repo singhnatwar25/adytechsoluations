@@ -1,0 +1,790 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Read expert digital marketing tips from AdyTechSolutions. Learn about social media marketing, SEO, PPC, and more to grow your business.">
+  <meta name="keywords" content="social media marketing services, best digital marketing agency, digital marketing for small businesses, affordable SMM agency, social media strategy">
+  <meta name="author" content="AdyTechSolutions">
+  <meta property="og:title" content="Blog | AdyTechSolutions Digital Marketing">
+  <meta property="og:description" content="Discover expert insights on social media marketing, SEO, and PPC to boost your business. Read AdyTechSolutions' blog now!">
+  <meta property="og:image" content="https://via.placeholder.com/1200x630?text=AdyTechSolutions+Blog">
+  <meta property="og:url" content="https://www.adytechsolutions.com/blog">
+  <title>Blog | AdyTechSolutions</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+  <!-- font  -->
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Finger+Paint&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Inter', sans-serif;
+      background-color: #E5E7EB;
+      scroll-behavior: smooth;
+      line-height: 1.7;
+    }
+        .finger-paint-regular {
+        font-family: "Finger Paint", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+      }
+    header.navbar {
+      background: linear-gradient(to right, #6B21A8, #9333EA);
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      padding: 1rem 0;
+    }
+    .navbar-brand, .nav-link {
+      color: #ffffff !important;
+      font-weight: 600;
+      transition: color 0.3s;
+    }
+    .nav-link:hover {
+      color: #F87171 !important;
+    }
+    .hero-section {
+      background: linear-gradient(135deg, #6B21A8 0%, #9333EA 50%, #EC4899 100%);
+      color: white;
+      padding: 180px 0;
+      position: relative;
+      overflow: hidden;
+      border-bottom: 5px solid #F87171;
+    }
+    .hero-section::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: url('https://images.unsplash.com/photo-1432888622747-4eb9a8efeb07?w=1920&h=600&fit=crop&crop=center') no-repeat center center/cover;
+      opacity: 0.2;
+      z-index: 0;
+    }
+    .hero-content {
+      position: relative;
+      z-index: 1;
+    }
+    .hero-section h1 {
+      font-size: 3.8rem;
+      font-weight: 700;
+      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+      animation: fadeInDown 1s ease-out;
+      margin-bottom: 1.5rem;
+    }
+    .hero-section p {
+      font-size: 1.3rem;
+      margin-bottom: 2rem;
+      animation: fadeInUp 1.2s ease-out;
+    }
+    .btn-custom {
+      background: linear-gradient(135deg, #F87171, #EC4899);
+      color: #ffffff;
+      font-weight: 600;
+      padding: 1rem 2.5rem;
+      border-radius: 50px;
+      border: none;
+      transition: all 0.3s ease;
+      position: relative;
+      overflow: hidden;
+      animation: fadeInUp 1.4s ease-out;
+    }
+    .btn-custom::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: -100%;
+      width: 100%;
+      height: 100%;
+      background: linear-gradient(90deg, transparent, rgba(255,255,255,0.2), transparent);
+      transition: left 0.5s;
+    }
+    .btn-custom:hover::before {
+      left: 100%;
+    }
+    .btn-custom:hover {
+      transform: translateY(-3px) scale(1.05);
+      box-shadow: 0 15px 35px rgba(248, 113, 113, 0.4);
+      background: linear-gradient(135deg, #EC4899, #F87171);
+    }
+    .section-title {
+      font-size: 2.8rem;
+      font-weight: 700;
+      background: linear-gradient(135deg, #6B21A8, #9333EA, #EC4899);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+      margin-bottom: 3rem;
+      position: relative;
+      text-align: center;
+      animation: fadeInUp 0.8s ease-out;
+    }
+    .section-title::after {
+      content: '';
+      width: 80px;
+      height: 4px;
+      background: linear-gradient(90deg, #F87171, #EC4899);
+      position: absolute;
+      bottom: -15px;
+      left: 50%;
+      transform: translateX(-50%);
+      border-radius: 2px;
+      animation: fadeInUp 1s ease-out;
+    }
+    .blog-card {
+      border: none;
+      border-radius: 20px;
+      background: #ffffff;
+      box-shadow: 0 10px 30px rgba(107, 33, 168, 0.1);
+      transition: all 0.4s ease;
+      position: relative;
+      overflow: hidden;
+      height: 100%;
+    }
+    
+    .blog-card::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      height: 4px;
+      background: linear-gradient(90deg, #6B21A8, #9333EA, #EC4899);
+      transform: scaleX(0);
+      transition: transform 0.3s ease;
+    }
+    
+    .blog-card:hover::before {
+      transform: scaleX(1);
+    }
+    
+    .blog-card:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 20px 50px rgba(107, 33, 168, 0.2);
+    }
+    
+    .blog-card img {
+      border-top-left-radius: 20px;
+      border-top-right-radius: 20px;
+      width: 100%;
+      height: 250px;
+      object-fit: cover;
+      transition: transform 0.3s ease;
+    }
+    
+    .blog-card:hover img {
+      transform: scale(1.05);
+    }
+    
+    .blog-card h3 {
+      color: #6B21A8;
+      font-weight: 700;
+      margin-bottom: 1rem;
+      font-size: 1.3rem;
+    }
+    
+    .blog-card .card-body {
+      padding: 1.5rem;
+    }
+    
+    .blog-card .btn-custom {
+      padding: 0.6rem 1.5rem;
+      font-size: 0.9rem;
+      margin-top: 1rem;
+    }
+    
+    .blog-section {
+      background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+      padding: 100px 0;
+      position: relative;
+    }
+    
+    .cta-section {
+      background: #f8f9fa;
+      color: rgb(4, 4, 4);
+      padding: 100px 0;
+    }
+    
+    .blog-meta {
+      color: #9333EA;
+      font-size: 0.9rem;
+      font-weight: 600;
+      margin-bottom: 0.5rem;
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+    }
+    
+    .blog-meta i {
+      color: #EC4899;
+    }
+    /* Enhanced Footer Styles */
+    .enhanced-footer {
+      background: linear-gradient(135deg, #6B21A8 0%, #9333EA 50%, #EC4899 100%);
+      color: #ffffff;
+      padding: 60px 0 0;
+      position: relative;
+    }
+    
+    .enhanced-footer::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      height: 5px;
+      background: linear-gradient(90deg, #F87171, #EC4899, #9333EA, #6B21A8);
+    }
+    
+    .newsletter-section {
+      background: rgba(255, 255, 255, 0.1);
+      border-radius: 20px;
+      backdrop-filter: blur(10px);
+      margin-bottom: 3rem;
+    }
+    
+    .newsletter-title {
+      font-size: 2rem;
+      font-weight: 700;
+      color: #ffffff;
+      margin-bottom: 1rem;
+    }
+    
+    .newsletter-subtitle {
+      font-size: 1.1rem;
+      color: rgba(255, 255, 255, 0.9);
+      margin-bottom: 2rem;
+    }
+    
+    .newsletter-form .input-group {
+      max-width: 500px;
+      margin: 0 auto;
+    }
+    
+    .newsletter-input {
+      border: none;
+      border-radius: 50px 0 0 50px;
+      padding: 15px 20px;
+      font-size: 1rem;
+      background: rgba(255, 255, 255, 0.95);
+    }
+    
+    .newsletter-btn {
+      border-radius: 0 50px 50px 0;
+      padding: 15px 25px;
+      border: none;
+    }
+    
+    .footer-heading {
+      font-size: 1.3rem;
+      font-weight: 700;
+      color: #ffffff;
+      margin-bottom: 1.5rem;
+      position: relative;
+    }
+    
+    .footer-heading::after {
+      content: '';
+      position: absolute;
+      bottom: -5px;
+      left: 0;
+      width: 30px;
+      height: 2px;
+      background: #F87171;
+    }
+    
+    .footer-text {
+      color: rgba(255, 255, 255, 0.9);
+      line-height: 1.6;
+      margin-bottom: 1.5rem;
+    }
+    
+    .footer-contact p {
+      color: rgba(255, 255, 255, 0.9);
+      margin-bottom: 0.5rem;
+      font-size: 0.95rem;
+    }
+    
+    .footer-contact i {
+      color: #F87171;
+      width: 20px;
+    }
+    
+    .footer-links {
+      list-style: none;
+      padding: 0;
+    }
+    
+    .footer-links li {
+      margin-bottom: 0.5rem;
+    }
+    
+    .footer-links a {
+      color: rgba(255, 255, 255, 0.8);
+      text-decoration: none;
+      font-size: 0.95rem;
+      transition: all 0.3s ease;
+    }
+    
+    .footer-links a:hover {
+      color: #F87171;
+      padding-left: 5px;
+    }
+    
+    .social-links {
+      display: flex;
+      gap: 15px;
+    }
+    
+    .social-links a {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      width: 40px;
+      height: 40px;
+      background: rgba(255, 255, 255, 0.1);
+      border-radius: 50%;
+      color: #ffffff;
+      font-size: 1.2rem;
+      transition: all 0.3s ease;
+    }
+    
+    .social-links a:hover {
+      background: #F87171;
+      transform: translateY(-3px);
+      box-shadow: 0 5px 15px rgba(248, 113, 113, 0.4);
+    }
+    
+    .footer-bottom {
+      border-top: 1px solid rgba(255, 255, 255, 0.2);
+      padding: 20px 0;
+      color: rgba(255, 255, 255, 0.8);
+    }
+    
+    @keyframes fadeInDown {
+      from { opacity: 0; transform: translateY(-20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+    @media (max-width: 768px) {
+      .hero-section h1 { font-size: 2.5rem; }
+      .hero-section p { font-size: 1.2rem; }
+      .section-title { font-size: 2rem; }
+    }
+  </style>
+</head>
+<body>
+  <!-- Header -->
+  <header class="navbar navbar-expand-lg navbar-dark sticky-top">
+    <div class="container">
+      <a class="navbar-brand finger-paint-regular" href="index.html">AdyTechSolutions</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html#home">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="social-media-marketing-services.html">Services</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="about.html">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="portfolio.html">Portfolio</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="blog.html">Blog</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="contact.html">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </header>
+
+  <!-- Main Content -->
+  <main>
+    <!-- Hero Section -->
+    <section id="hero" class="hero-section text-center">
+      <div class="container hero-content">
+        <h1 class="mb-4">Digital Marketing Insights</h1>
+        <p class="lead mb-5">Explore expert tips on <strong>social media marketing services</strong>, SEO, and PPC from AdyTechSolutions, your <strong>best digital marketing agency</strong>.</p>
+        <a href="#contact" class="btn btn-custom btn-lg">Get a Free Consultation</a>
+      </div>
+    </section>
+
+    <!-- Blog Section -->
+    <section id="blog" class="blog-section">
+      <div class="container">
+        <h2 class="section-title animate-on-scroll">Latest Blog Posts</h2>
+        <p class="text-center mb-5 animate-on-scroll">Stay ahead with our insights on <strong>digital marketing for small businesses</strong> and industry trends:</p>
+        <div class="row">
+          <div class="col-md-4 mb-4">
+            <article class="card blog-card h-100 animate-on-scroll">
+              <img src="https://images.unsplash.com/photo-1611162617474-5b21e879e113?w=400&h=250&fit=crop&crop=center" alt="How to use Instagram Reels for business by AdyTechSolutions">
+              <div class="card-body">
+                <div class="blog-meta">
+                  <i class="fab fa-instagram"></i>
+                  <span>Social Media Marketing</span>
+                  <span>•</span>
+                  <span>5 min read</span>
+                </div>
+                <h3 class="card-title">How to Use Instagram Reels to Boost Engagement</h3>
+                <p class="card-text">Learn how our <strong>Facebook & Instagram ad experts</strong> leverage Reels to drive 3x engagement for e-commerce brands. Discover proven strategies that convert viewers into customers.</p>
+                <a href="#" class="btn btn-custom">Read More <i class="fas fa-arrow-right ms-2"></i></a>
+              </div>
+            </article>
+          </div>
+          <div class="col-md-4 mb-4">
+            <article class="card blog-card h-100 animate-on-scroll">
+              <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=400&h=250&fit=crop&crop=center" alt="SEO tips for small businesses by AdyTechSolutions">
+              <div class="card-body">
+                <div class="blog-meta">
+                  <i class="fas fa-search"></i>
+                  <span>SEO Optimization</span>
+                  <span>•</span>
+                  <span>7 min read</span>
+                </div>
+                <h3 class="card-title">Top 5 SEO Strategies for Small Businesses</h3>
+                <p class="card-text">Discover how to rank higher on Google with our proven SEO tactics, tailored for <strong>digital marketing for small businesses</strong>. Learn technical SEO, keyword research, and content optimization.</p>
+                <a href="#" class="btn btn-custom">Read More <i class="fas fa-arrow-right ms-2"></i></a>
+              </div>
+            </article>
+          </div>
+          <div class="col-md-4 mb-4">
+            <article class="card blog-card h-100 animate-on-scroll">
+              <img src="https://images.unsplash.com/photo-1563013544-824ae1b704d3?w=400&h=250&fit=crop&crop=center" alt="PPC advertising guide by AdyTechSolutions">
+              <div class="card-body">
+                <div class="blog-meta">
+                  <i class="fas fa-bullhorn"></i>
+                  <span>PPC Advertising</span>
+                  <span>•</span>
+                  <span>10 min read</span>
+                </div>
+                <h3 class="card-title">The Ultimate Guide to PPC Advertising</h3>
+                <p class="card-text">Maximize ROI with our expert tips on Google Ads and Meta campaigns for startups and enterprises. Master bidding strategies and ad optimization techniques.</p>
+                <a href="#" class="btn btn-custom">Read More <i class="fas fa-arrow-right ms-2"></i></a>
+              </div>
+            </article>
+          </div>
+          <div class="col-md-4 mb-4">
+            <article class="card blog-card h-100 animate-on-scroll">
+              <img src="https://images.unsplash.com/photo-1611162616305-c69b3fa7fbe0?w=400&h=250&fit=crop&crop=center" alt="TikTok marketing strategies by AdyTechSolutions">
+              <div class="card-body">
+                <div class="blog-meta">
+                  <i class="fab fa-tiktok"></i>
+                  <span>TikTok Marketing</span>
+                  <span>•</span>
+                  <span>6 min read</span>
+                </div>
+                <h3 class="card-title">Why TikTok is a Game-Changer for Brands</h3>
+                <p class="card-text">Explore how our <strong>social media strategy for businesses</strong> uses TikTok to reach Gen Z and Millennials. Create viral content that drives engagement and sales.</p>
+                <a href="#" class="btn btn-custom">Read More <i class="fas fa-arrow-right ms-2"></i></a>
+              </div>
+            </article>
+          </div>
+          <div class="col-md-4 mb-4">
+            <article class="card blog-card h-100 animate-on-scroll">
+              <img src="https://images.unsplash.com/photo-1552664730-d307ca884978?w=400&h=250&fit=crop&crop=center" alt="Content marketing tips by AdyTechSolutions">
+              <div class="card-body">
+                <div class="blog-meta">
+                  <i class="fas fa-pen-fancy"></i>
+                  <span>Content Marketing</span>
+                  <span>•</span>
+                  <span>8 min read</span>
+                </div>
+                <h3 class="card-title">Content Marketing Tips for 2025</h3>
+                <p class="card-text">Learn how to create compelling blogs and videos to drive traffic and conversions. Master storytelling techniques that resonate with your target audience.</p>
+                <a href="#" class="btn btn-custom">Read More <i class="fas fa-arrow-right ms-2"></i></a>
+              </div>
+            </article>
+          </div>
+          <div class="col-md-4 mb-4">
+            <article class="card blog-card h-100 animate-on-scroll">
+              <img src="https://images.unsplash.com/photo-1596526131083-e8c633c948d2?w=400&h=250&fit=crop&crop=center" alt="Email marketing strategies by AdyTechSolutions">
+              <div class="card-body">
+                <div class="blog-meta">
+                  <i class="fas fa-envelope-open-text"></i>
+                  <span>Email Marketing</span>
+                  <span>•</span>
+                  <span>9 min read</span>
+                </div>
+                <h3 class="card-title">Effective Email Marketing Strategies</h3>
+                <p class="card-text">Boost customer retention with our proven email nurturing techniques for e-commerce and SaaS. Build automated sequences that convert leads into loyal customers.</p>
+                <a href="#" class="btn btn-custom">Read More <i class="fas fa-arrow-right ms-2"></i></a>
+              </div>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Call to Action Section -->
+    <section id="contact" class="cta-section text-center">
+      <div class="container">
+        <h2 class="">Grow with Expert Insights</h2>
+        <p class="lead mb-5">Ready to apply our <strong>social media marketing services</strong> to your business? Contact AdyTechSolutions today!</p>
+        <a href="contact.html" class="btn btn-custom btn-lg">Get Started</a>
+      </div>
+    </section>
+  </main>
+
+ <!-- Enhanced Footer -->
+ <footer class="enhanced-footer">
+  <div class="container">
+    <!-- Newsletter Section -->
+    <div class="newsletter-section text-center py-5 mb-5">
+      <div class="row justify-content-center">
+        <div class="col-lg-8">
+          <h3 class="newsletter-title mb-3">Stay Updated with Digital Marketing Tips!</h3>
+          <p class="newsletter-subtitle mb-4">Get exclusive insights, industry trends, and marketing strategies delivered to your inbox weekly.</p>
+          <form id="newsletterForm" class="newsletter-form">
+            <div class="input-group">
+              <input type="email" class="form-control newsletter-input" placeholder="Enter your email address" required>
+              <button class="btn btn-custom newsletter-btn" type="submit">
+                <i class="fas fa-paper-plane me-2"></i>Subscribe Now
+              </button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+    
+    <!-- Main Footer Content -->
+    <div class="row">
+      <!-- Company Info -->
+      <div class="col-lg-4 col-md-6 mb-4">
+        <h5 class="footer-heading">AdyTechSolutions</h5>
+        <p class="footer-text">Your trusted partner for digital marketing success. We help businesses grow through strategic social media marketing, SEO, PPC, and comprehensive digital solutions.</p>
+        <div class="footer-contact">
+          <p><i class="fas fa-envelope me-2"></i> info@adytechsolutions.com</p>
+          <p><i class="fas fa-phone me-2"></i> +91 97999 96948</p>
+            <p><i class="fas fa-map-marker-alt me-2"></i> 115-116, Jan Path, Block D, Nirman Nagar, Brijlalpura, Jaipur, Rajasthan 302019</p>
+
+        </div>
+      </div>
+      
+      <!-- Services -->
+      <div class="col-lg-2 col-md-6 mb-4">
+        <h5 class="footer-heading">Services</h5>
+        <ul class="footer-links">
+          <li><a href="#services">Social Media Marketing</a></li>
+          <li><a href="#services">SEO Optimization</a></li>
+          <li><a href="#services">PPC Advertising</a></li>
+          <li><a href="#services">Content Marketing</a></li>
+          <li><a href="#services">Email Marketing</a></li>
+          <li><a href="#services">Web Development</a></li>
+        </ul>
+      </div>
+      
+      <!-- Company -->
+      <div class="col-lg-2 col-md-6 mb-4">
+        <h5 class="footer-heading">Company</h5>
+        <ul class="footer-links">
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="portfolio.html">Portfolio</a></li>
+          <li><a href="blog.html">Blog</a></li>
+          <li><a href="#testimonials">Testimonials</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="#">Careers</a></li>
+        </ul>
+      </div>
+      
+      <!-- Resources -->
+      <div class="col-lg-2 col-md-6 mb-4">
+        <h5 class="footer-heading">Resources</h5>
+        <ul class="footer-links">
+          <li><a href="#faq">FAQ</a></li>
+          <li><a href="#">Case Studies</a></li>
+          <li><a href="#">Free Tools</a></li>
+          <li><a href="#">Marketing Guide</a></li>
+          <li><a href="#">Industry Reports</a></li>
+          <li><a href="#">Webinars</a></li>
+        </ul>
+      </div>
+      
+      <!-- Social & Legal -->
+      <div class="col-lg-2 col-md-6 mb-4">
+        <h5 class="footer-heading">Connect</h5>
+        <div class="social-links mb-3">
+          <a href="#" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+          <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+          <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+          <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+          <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+        </div>
+        <ul class="footer-links">
+          <li><a href="#">Privacy Policy</a></li>
+          <li><a href="#">Terms of Service</a></li>
+          <li><a href="#">Cookie Policy</a></li>
+        </ul>
+      </div>
+    </div>
+    
+    <!-- Bottom Footer -->
+    <div class="footer-bottom text-center pt-4 mt-4">
+      <p class="mb-0">© 2024 AdyTechSolutions. All rights reserved. | Designed with ❤️ for your digital success.</p>
+    </div>
+  </div>
+</footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/js/all.min.js"></script>
+  <script>
+    // Smooth scrolling for anchor links
+    document.querySelectorAll('a.nav-link, a.btn-custom').forEach(anchor => {
+      anchor.addEventListener('click', function(e) {
+        if (this.getAttribute('href').startsWith('#')) {
+          e.preventDefault();
+          const targetId = this.getAttribute('href');
+          const targetElement = document.querySelector(targetId);
+          if (targetElement) {
+            targetElement.scrollIntoView({ behavior: 'smooth', block: 'start' });
+          }
+        }
+      });
+    });
+
+    // Navbar scroll effect
+    window.addEventListener('scroll', function() {
+      const navbar = document.querySelector('.navbar');
+      if (window.scrollY > 50) {
+        navbar.style.background = 'rgba(107, 33, 168, 0.95)';
+        navbar.style.backdropFilter = 'blur(10px)';
+        navbar.style.boxShadow = '0 2px 20px rgba(107, 33, 168, 0.3)';
+      } else {
+        navbar.style.background = 'linear-gradient(to right, #6B21A8, #9333EA)';
+        navbar.style.backdropFilter = 'blur(5px)';
+        navbar.style.boxShadow = '0 4px 6px rgba(0, 0, 0, 0.1)';
+      }
+    });
+
+    // Intersection Observer for animations
+    const observerOptions = {
+      threshold: 0.1,
+      rootMargin: '0px 0px -50px 0px'
+    };
+
+    const observer = new IntersectionObserver(function(entries) {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.style.opacity = '1';
+          entry.target.style.transform = 'translateY(0)';
+        }
+      });
+    }, observerOptions);
+
+    // Observe elements with animate-on-scroll class
+    document.querySelectorAll('.animate-on-scroll').forEach(el => {
+      el.style.opacity = '0';
+      el.style.transform = 'translateY(30px)';
+      el.style.transition = 'opacity 0.8s ease, transform 0.8s ease';
+      observer.observe(el);
+    });
+
+    // Newsletter form submission
+    document.getElementById('newsletterForm').addEventListener('submit', function(e) {
+      e.preventDefault();
+      const email = this.querySelector('input[type="email"]').value;
+      if (email) {
+        // Simulate form submission
+        const button = this.querySelector('.newsletter-btn');
+        const originalText = button.innerHTML;
+        button.innerHTML = '<i class="fas fa-spinner fa-spin me-2"></i>Subscribing...';
+        button.disabled = true;
+        
+        setTimeout(() => {
+          alert('Thank you for subscribing to our newsletter! You\'ll receive our latest digital marketing tips and insights.');
+          this.reset();
+          button.innerHTML = originalText;
+          button.disabled = false;
+        }, 2000);
+      }
+    });
+
+    // Add hover effects to blog cards
+    document.querySelectorAll('.blog-card').forEach(card => {
+      card.addEventListener('mouseenter', function() {
+        this.style.transform = 'translateY(-10px) scale(1.02)';
+      });
+      
+      card.addEventListener('mouseleave', function() {
+        this.style.transform = 'translateY(0) scale(1)';
+      });
+    });
+
+    // Parallax effect for hero section
+    window.addEventListener('scroll', function() {
+      const scrolled = window.pageYOffset;
+      const heroSection = document.querySelector('.hero-section');
+      if (heroSection) {
+        heroSection.style.transform = `translateY(${scrolled * 0.5}px)`;
+      }
+    });
+
+    // Add pulse animation to blog meta icons
+    document.querySelectorAll('.blog-meta i').forEach(icon => {
+      icon.addEventListener('mouseenter', function() {
+        this.style.animation = 'pulse 0.6s ease-in-out';
+      });
+      
+      icon.addEventListener('animationend', function() {
+        this.style.animation = '';
+      });
+    });
+
+    // Add CSS for animations
+    const style = document.createElement('style');
+    style.textContent = `
+      @keyframes pulse {
+        0% { transform: scale(1); }
+        50% { transform: scale(1.2); }
+        100% { transform: scale(1); }
+      }
+      
+      @keyframes fadeInUp {
+        from {
+          opacity: 0;
+          transform: translateY(30px);
+        }
+        to {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
+      
+      .blog-card {
+        transition: all 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+      }
+      
+      .blog-meta {
+        animation: fadeInUp 1s ease-out;
+      }
+      
+      .btn-custom:hover i {
+        transform: translateX(5px);
+        transition: transform 0.3s ease;
+      }
+    `;
+    document.head.appendChild(style);
+
+    // Initialize page
+    document.addEventListener('DOMContentLoaded', function() {
+      // Ensure all images are visible
+      document.querySelectorAll('.blog-card img').forEach(img => {
+        img.style.opacity = '1';
+        img.style.transition = 'transform 0.3s ease';
+      });
+      
+      // Add staggered animation to blog cards
+      document.querySelectorAll('.blog-card').forEach((card, index) => {
+        card.style.animationDelay = `${index * 0.1}s`;
+      });
+    });
+  </script>
+</body>
+</html>
